@@ -13,6 +13,10 @@ public class ApocalipsisZombieDaw {
 
     /**
      * @param args the command line arguments
+     * @author Noelia Rodríguez 
+     * @author Silvia Sales 
+     * @version 0.1
+     * @since 0.1
      */
     public static void main(String[] args) {
         System.out.println("Cerebroooos!");
