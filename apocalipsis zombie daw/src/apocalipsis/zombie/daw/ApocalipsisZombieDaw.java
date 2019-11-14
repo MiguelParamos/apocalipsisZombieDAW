@@ -17,6 +17,8 @@ public class ApocalipsisZombieDaw {
     public static void main(String[] args) {
         System.out.println("Cerebroooos!");
         System.out.println("soy muy conflictivo :)");
+        System.out.println("ale,nico");
+        
         System.out.println("Jacob,Daniel");
         System.out.println("alvaro");
         System.out.println("Miguel");
