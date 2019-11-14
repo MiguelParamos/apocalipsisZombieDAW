@@ -20,7 +20,7 @@ public class ApocalipsisZombieDaw {
                 
                 
         System.out.println("NoeliaSilvia");
-        System.out.println("soy muy conflictivo :)");
+        System.out.println("raul y javi");
         System.out.println("ale,nico");
         
         System.out.println("Jacob,Daniel");
