@@ -5,9 +5,13 @@
  */
 package Juanlu.Josema;
 
+
 /**
- *
- * @author Usuario
+ *Clase Funciones personaje 
+ * @author Jose Martin Martinez
+ * @author Juan Luis Ceacero
+ * @version 0.1
+ * @since 0.1
  */
 public class FuncionesJLJM {
 
