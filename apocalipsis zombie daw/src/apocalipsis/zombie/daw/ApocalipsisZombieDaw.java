@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package apocalipsis.zombie.daw;
-
+import alvaro.FuncionesA;
 /**
  *
  * @author cenec
@@ -18,6 +18,7 @@ public class ApocalipsisZombieDaw {
         System.out.println("Cerebroooos!");
         System.out.println("ale,nico");
         
+        System.out.println("Miguel");
     }
     
 }
