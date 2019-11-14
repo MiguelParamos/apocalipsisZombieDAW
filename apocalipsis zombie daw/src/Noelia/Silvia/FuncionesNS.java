@@ -10,5 +10,11 @@ package Noelia.Silvia;
  * @author nrcif
  */
 public class FuncionesNS {
+    public static String nombre; // Nombre del personaje
+    public static byte velocidad;
+    public static byte fuerza;
+    public static byte intuicion;
+    public static byte percepcion;
+    
     
 }
