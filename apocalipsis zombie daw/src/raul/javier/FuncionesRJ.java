@@ -11,4 +11,9 @@ package raul.javier;
  */
 public class FuncionesRJ {
     
+    public static String nombre;
+    public static byte velocidad;
+    public static byte fuerza;
+    public static byte intuicion;
+    public static byte percepcion;
 }
