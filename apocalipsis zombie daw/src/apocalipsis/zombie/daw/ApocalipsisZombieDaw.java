@@ -19,6 +19,11 @@ public class ApocalipsisZombieDaw {
         System.out.println("pedro isaak");
                 
                 
+        System.out.println("soy muy conflictivo :)");
+        System.out.println("ale,nico");
+        
+        System.out.println("Jacob,Daniel");
+        System.out.println("alvaro");
         System.out.println("Miguel");
     }
     
