@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ale.nico;
+package Jacob.Daniel;
 
 /**
  *
- * @author nicoc
+ * @author 2DAW
  */
-public class FuncionesNA {
+public class FuncionesJ {
+    
     public static String nombre;
     public static byte velocidad;
     public static byte fuerza;
     public static byte intuicion;
     public static byte percepcion;
-    
 }
