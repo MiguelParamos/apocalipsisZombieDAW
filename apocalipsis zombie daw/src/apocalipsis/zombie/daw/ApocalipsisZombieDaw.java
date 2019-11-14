@@ -16,15 +16,8 @@ public class ApocalipsisZombieDaw {
      */
     public static void main(String[] args) {
         System.out.println("Cerebroooos!");
-<<<<<<< HEAD
-<<<<<<< HEAD
         System.out.println("Juanlu y Jose");
-=======
-=======
-        System.out.println("Jacob,Daniel");
->>>>>>> c737eedcd9ea94225ffad37861b75322df90c9d4
         System.out.println("alvaro");
->>>>>>> 81c0bcb77d32681cfaa7531bcf796d94eac808a6
         System.out.println("Miguel");
     }
     
