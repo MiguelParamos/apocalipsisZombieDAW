@@ -10,5 +10,10 @@ package ale.nico;
  * @author nicoc
  */
 public class FuncionesNA {
+    public static String nombre;
+    public static byte velocidad;
+    public static byte fuerza;
+    public static byte intuicion;
+    public static byte percepcion;
     
 }
