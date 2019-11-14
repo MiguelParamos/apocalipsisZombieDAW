@@ -10,5 +10,10 @@ package Jacob.Daniel;
  * @author 2DAW
  */
 public class FuncionesJD {
-    
+  
+    public static String nombre;
+    public static byte velocidad;
+    public static byte fuerza;
+    public static byte intuicion;
+    public static byte percepcion;
 }
