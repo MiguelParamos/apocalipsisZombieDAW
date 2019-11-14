@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package alvaro;
+package Jacob.Daniel;
 
 /**
  *
  * @author 2DAW
  */
-public class FuncionesA {
+public class FuncionesJ {
+    
     public static String nombre;
     public static byte velocidad;
     public static byte fuerza;
