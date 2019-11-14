@@ -6,8 +6,10 @@
 package apocalipsis.zombie.daw;
 import alvaro.FuncionesA;
 /**
- *
- * @author cenec
+ *  Clase principal, que lanza el programa del apocalipsis zombie
+ * @author Miguel Páramos
+ * @version 0.1
+ * @since 0.1
  */
 public class ApocalipsisZombieDaw {
 
@@ -27,6 +29,16 @@ public class ApocalipsisZombieDaw {
         System.out.println("Jacob,Daniel");
         System.out.println("alvaro");
         System.out.println("Miguel");
+        
+        System.out.println(situacionActual(
+                "Miguel",(byte)50,(byte)50,(byte)50,(byte)50));
+        
+    }
+    
+    
+    public static String situacionActual(String n, byte v,byte f,byte i, byte p){
+            return "\n-----------------\n|\t"+n+"\t|\n-----------------\nVelocidad:\t"+v+"\nFuerza: \t"+f+
+                    "\nIntuición:\t"+i+"\nPercepción:\t"+p+"\n-----------------\n";
     }
     
 }
