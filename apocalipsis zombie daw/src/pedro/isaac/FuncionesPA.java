@@ -3,18 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Noelia.Silvia;
+package pedro.isaac;
 
 /**
  *
- * @author nrcif
+ * @author 2DAW
  */
-public class FuncionesNS {
-    public static String nombre; // Nombre del personaje
+public class FuncionesPA {
+    public static String nombre;
     public static byte velocidad;
     public static byte fuerza;
     public static byte intuicion;
     public static byte percepcion;
-    
-    
 }
