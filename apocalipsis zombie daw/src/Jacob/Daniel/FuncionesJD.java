@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package apocalipsis.zombie.daw.alvaro;
+package Jacob.Daniel;
 
 /**
  *
  * @author 2DAW
  */
-public class a {
+public class FuncionesJD {
     
 }
