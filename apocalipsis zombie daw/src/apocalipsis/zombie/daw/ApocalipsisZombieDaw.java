@@ -6,8 +6,9 @@
 package apocalipsis.zombie.daw;
 import alvaro.FuncionesA;
 /**
- *
- * @author pedro issac
+ * Clase Main
+ * @author pedro
+ * @author issac
  * @version 0.1
  * @since 0.1
  */
