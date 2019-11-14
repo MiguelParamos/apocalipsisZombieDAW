@@ -10,9 +10,10 @@ package Juanlu.Josema;
  * @author Usuario
  */
 public class FuncionesJLJM {
-    public static String Rick ;
+
+    public static String Rick;
     public static byte fuerza;
-             public static byte velocidad;
-                      public static byte intuición;
-                               public static byte percepción;
+    public static byte velocidad;
+    public static byte intuición;
+    public static byte percepción;
 }

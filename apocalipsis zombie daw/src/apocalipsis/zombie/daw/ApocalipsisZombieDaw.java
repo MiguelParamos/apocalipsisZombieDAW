@@ -17,6 +17,14 @@ public class ApocalipsisZombieDaw {
     public static void main(String[] args) {
         System.out.println("Cerebroooos!");
         System.out.println("Juanlu y Jose");
+        System.out.println("pedro isaak");
+                
+                
+        System.out.println("NoeliaSilvia");
+        System.out.println("raul y javi");
+        System.out.println("ale,nico");
+        
+        System.out.println("Jacob,Daniel");
         System.out.println("alvaro");
         System.out.println("Miguel");
     }
