@@ -5,6 +5,8 @@
  */
 package ale.nico;
 
+import java.util.Scanner;
+
 /**
  *datos  del personaje 
  * @autor Ale,Nico
@@ -12,10 +14,17 @@ package ale.nico;
  * @since 0.1
  */
 public class FuncionesNA {
+    
     public static String nombre; //Nombre del personaje
     public static byte velocidad;//Velocidad del personaje entre 0 y 100
     public static byte fuerza;// fuerza del personaje entre 0 y 100
     public static byte intuicion; //intuicion del personaje entre 0 y 100
     public static byte percepcion;//intuicion del personaje entre 0 y 100
-    
+    public static boolean  comprobacionInicial (byte velocidad,byte fuerza, byte intuicion, byte percepcion){
+        if (velocidad+fuerza+intuicion+percepcion==200) {
+            return true;
+    }else
+     return false;
 }
+}
+
