@@ -26,9 +26,15 @@ public class FuncionesJD {
         if (turno == 1 && accion.equals("Mirar internet")) {
             System.out.println("No encuentro nada anormal");
             return "No veo nada anormal";
-        }
+        }else{
+        if (turno == 2 && accion.equals("llamar a mis padres")) {
+            System.out.println("No saben nada raro");
+            return "No saben nada raro";
+    }
             return"";
     }
+}
+
 }
 
 
