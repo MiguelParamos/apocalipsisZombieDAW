@@ -27,9 +27,9 @@ public class FuncionesRJ {
      * @param accion  variable que establece la accion que se va a realizar.
      * @return Devuelve la accion que se va a realizar.
      */
-    public static String descripcionReaccion(String turno, String accion){
+    public static String descripcionReaccion(byte turno, String accion){
         
-        if(turno.equals("1")&&accion.equals("esperar")){
+        if(turno==1&&accion.equals("esperar")){
             
             return "Me quedo mirando las musarañas";
                

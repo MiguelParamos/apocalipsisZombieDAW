@@ -40,20 +40,33 @@ public class FuncionesNS {
      
      }
      
-     /**
+     /** 1ª if
       * Respuesta al grito de la calle
       * @param turno vez en que se realiza una acción
       * @param accion respuesta ante el suceso del turno
       * @return mensaje con la acción realizada, estar quieto
-      */
+      */   
+     /** 2ª if
+       * Pregunta a Rick qué pasa
+       * @param turno es la segunda vez que se realizar una opción
+       * @param accion respuesta ante los gritos de la calle
+       * @return mensaje preguntar qué pasa?
+       */        
+            
        public static String descripcionReaccion (byte turno, String accion){
      
         if (turno==1&&accion.equals("esperar")){
            return ("Me quedo mirando musarañas");
-            }
-             return "";
+            }  if (turno==2&&accion.equals("Pregunto qué está pasando")){
+                    return ("¿Qué está pasando Rick?");
+                }else{
+                    return "";
+             
  
-    }   
+
+
+       }    
+    }
 }
     
     
