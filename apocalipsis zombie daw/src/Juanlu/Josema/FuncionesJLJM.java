@@ -46,7 +46,7 @@ public class FuncionesJLJM {
      * @param p la estadistica de percepción
      * @return devuelve un string dependiendo de nuestros puntos de percepción
      */
-    public static String descipcionReaccion(byte turno, String accion, byte p) {
+    public static String descripcionReaccion(byte turno, String accion, byte p) {
         if (turno == 1 && accion == "mirar por la ventana") {
             if (p < 30) {
                 return "No veo nada extraño";

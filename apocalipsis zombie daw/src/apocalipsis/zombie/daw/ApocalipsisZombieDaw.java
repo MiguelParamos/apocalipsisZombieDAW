@@ -143,10 +143,14 @@ public class ApocalipsisZombieDaw {
             
             //Turno 1
             historia+="\n\n Escuchamos todos un grito desde la calle.";
-           
-            
-            
-           System.out.println(historia);
+            historia+=FuncionesNS.descripcionReaccion(turno,"esperar");
+            historia+=FuncionesRJ.descripcionReaccion(turno,"esperar");
+            historia+=FuncionesJLJM.descripcionReaccion(turno,"mirar por la ventana",FuncionesJLJM.percepción);
+            historia+=FuncionesPI.descripcionReaccion(turno,"mirar por la ventana",FuncionesPI.percepcion);
+            historia+=FuncionesJD.descripcionReaccion(turno,"Mirar internet");
+            historia+=FuncionesNA.nombre+" avanza "+FuncionesNA.desplazamiento(FuncionesNA.velocidad)+" metros hacia el baño";
+
+            System.out.println(historia);
     }
     
     /**
