@@ -17,5 +17,5 @@ public class FuncionesNA {
     public static byte fuerza;// fuerza del personaje entre 0 y 100
     public static byte intuicion; //intuicion del personaje entre 0 y 100
     public static byte percepcion;//intuicion del personaje entre 0 y 100
-    
+   
 }
