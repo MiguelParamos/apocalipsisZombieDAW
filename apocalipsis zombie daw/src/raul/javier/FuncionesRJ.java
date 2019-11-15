@@ -21,10 +21,11 @@ public class FuncionesRJ {
     public static byte intuicion;//Intuicion del personaje entre 0 y 100
     public static byte percepcion;//Percepcion del personaje entre 0 y 100
    
+    
     /**
-     * Funcion que devuelve un mensaje, si mi turno es uno y la accion es esperar.
+     * Funcion que devuelve un mensaje, en funcion del turno y la accion.
      * @param turno variable que establece el turno en el que hare la accion.
-     * @param accion  variable que establece la accion que se va a realizar.
+     * @param accion variable que establece la accion que se va a realizar.
      * @return Devuelve la accion que se va a realizar.
      */
     public static String descripcionReaccion(byte turno, String accion){
@@ -33,7 +34,18 @@ public class FuncionesRJ {
             
             return "Me quedo mirando las musarañas";
                
-        }return "No ha ocurrido nada";
+        }else{
+        
+            if (turno==2&&accion.equals("mirar las noticias")){
+            
+            return "No veo nada anormal";
+            
+        }
+            
+        return"";
+        
+        
+        }
         
      
         
