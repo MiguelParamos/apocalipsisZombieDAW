@@ -6,7 +6,7 @@
 package ale.nico;
 
 /**
- *clase principal, que lanza el programa
+ *datos  del personaje 
  * @autor Ale,Nico
  * @version 0.1
  * @since 0.1
