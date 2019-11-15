@@ -49,8 +49,10 @@ public class FuncionesNS {
        public static String descripcionReaccion (byte turno, String accion){
      
         if (turno==1&&accion.equals("esperar")){
+           return ("Me quedo mirando musarañas");
             }
-            return ("Me quedo mirando musarañas");
+             return "";
+ 
     }   
 }
     
