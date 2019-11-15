@@ -30,6 +30,9 @@ public class ApocalipsisZombieDaw {
      * @since 0.1
      */
     public static void main(String[] args) {
+        
+            byte turno=1;
+        
             FuncionesJD.nombre="Sam";
             FuncionesJD.velocidad=70;
             FuncionesJD.fuerza=30;
@@ -63,8 +66,8 @@ public class ApocalipsisZombieDaw {
            FuncionesPI.nombre="Foyonero";
            FuncionesPI.velocidad=50;
            FuncionesPI.fuerza=100;
-           FuncionesA.intuicion=50;
-           FuncionesA.percepcion=0;
+           FuncionesPI.intuicion=50;
+           FuncionesPI.percepcion=0;
            
            FuncionesRJ.nombre="CabezaNuca";
            FuncionesRJ.fuerza=50;
@@ -75,7 +78,79 @@ public class ApocalipsisZombieDaw {
             //Aquí se cuenta todo lo que pasa
            String historia="Es 15 de Noviembre en Cenec, "+FuncionesJD.nombre+", "+FuncionesJLJM.nombre+",\n "+FuncionesNS.nombre+", " +FuncionesNA.nombre+", "+FuncionesPI.nombre+", "+FuncionesA.nombre+"\ny "+FuncionesRJ.nombre+" están en clase de programación.";
            
-           System.out.println(historia);
+           //Comprobación inicial
+           if(!FuncionesA.comprobacionInicial(
+                    FuncionesA.velocidad,
+                    FuncionesA.fuerza,
+                    FuncionesA.intuicion,
+                    FuncionesA.percepcion
+                    )){
+               System.out.println("El jugador "+FuncionesA.nombre+" es incoherente!");
+           }
+           
+            if(!FuncionesA.comprobacionInicial(
+                    FuncionesJLJM.velocidad,
+                    FuncionesJLJM.fuerza,
+                    FuncionesJLJM.intuición,
+                    FuncionesJLJM.percepción
+                    )){
+               System.out.println("El jugador "+FuncionesJLJM.nombre+" es incoherente!");
+           }
+            if(!FuncionesA.comprobacionInicial(
+                    FuncionesPI.velocidad,
+                    FuncionesPI.fuerza,
+                    FuncionesPI.intuicion,
+                    FuncionesPI.percepcion
+                    )){
+               System.out.println("El jugador "+FuncionesPI.nombre+" es incoherente!");
+           }
+            
+            if(!FuncionesA.comprobacionInicial(
+                    FuncionesJD.velocidad,
+                    FuncionesJD.fuerza,
+                    FuncionesJD.intuicion,
+                    FuncionesJD.percepcion
+                    )){
+               System.out.println("El jugador "+FuncionesJD.nombre+" es incoherente!");
+           }
+            
+            if(!FuncionesA.comprobacionInicial(
+                    FuncionesNS.velocidad,
+                    FuncionesNS.fuerza,
+                    FuncionesNS.intuicion,
+                    FuncionesNS.percepcion
+                    )){
+               System.out.println("El jugador "+FuncionesNS.nombre+" es incoherente!");
+           }
+            
+            if(!FuncionesA.comprobacionInicial(
+                    FuncionesNA.velocidad,
+                    FuncionesNA.fuerza,
+                    FuncionesNA.intuicion,
+                    FuncionesNA.percepcion
+                    )){
+               System.out.println("El jugador "+FuncionesNA.nombre+" es incoherente!");
+           }
+            
+            if(!FuncionesA.comprobacionInicial(
+                    FuncionesRJ.velocidad,
+                    FuncionesRJ.fuerza,
+                    FuncionesRJ.intuicion,
+                    FuncionesRJ.percepcion
+                    )){
+               System.out.println("El jugador "+FuncionesRJ.nombre+" es incoherente!");
+           }
+            
+            //Turno 1
+            historia+="\n\n Escuchamos todos un grito desde la calle.";
+            historia+=FuncionesNS.descripcionReaccion(turno,"esperar");
+            historia+=FuncionesRJ.descripcionReaccion(turno,"esperar");
+            historia+=FuncionesJLJM.descripcionReaccion(turno,"mirar por la ventana",FuncionesJLJM.percepción);
+            historia+=FuncionesPI.descripcionReaccion(turno,"mirar por la ventana",FuncionesPI.percepcion);
+            historia+=FuncionesJD.descripcionReaccion(turno,"Mirar internet");
+            historia+=FuncionesNA.nombre+" avanza "+FuncionesNA.desplazamiento(FuncionesNA.velocidad)+" metros hacia el baño";
+
+            System.out.println(historia);
     }
     
     /**
