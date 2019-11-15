@@ -6,13 +6,15 @@
 package alvaro;
 
 /**
- *
- * @author 2DAW
+ * Clase para las funciones de Alvaro
+ * @author alvaro
+ * @version 0.1
+ * @since 0.1
  */
 public class FuncionesA {
-    public static String nombre;
-    public static byte velocidad;
-    public static byte fuerza;
-    public static byte intuicion;
-    public static byte percepcion;
+    public static String nombre; //Nombre del personaje
+    public static byte velocidad;//Velocidad del personaje entre 0 y 100
+    public static byte fuerza;// fuerza del personaje entre 0 y 100
+    public static byte intuicion; //intuicion del personaje entre 0 y 100
+    public static byte percepcion;//intuicion del personaje entre 0 y 100
 }

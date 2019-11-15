@@ -6,14 +6,18 @@
 package Jacob.Daniel;
 
 /**
- *
- * @author 2DAW
+ *Funcion del personaje con sus parámetros.
+ * @author Daniel
+ * @author Jacob
+ * @version 0.1
+ * @since 0.1
  */
+ 
 public class FuncionesJD {
   
-    public static String nombre;
-    public static byte velocidad;
-    public static byte fuerza;
-    public static byte intuicion;
-    public static byte percepcion;
+    public static String nombre; //Nombre del personaje.
+    public static byte velocidad; //Velocidad del personaje.
+    public static byte fuerza; //Fuerza de personaje.
+    public static byte intuicion; //Intuicion del personaje.
+    public static byte percepcion; //Percepcion del personaje.
 }
