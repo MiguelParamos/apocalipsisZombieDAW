@@ -19,13 +19,12 @@ public class FuncionesA {
     public static byte percepcion;//intuicion del personaje entre 0 y 100 (60)
     
     /**
-     *  Imprime la situación actual de un personaje a través de sus variables
-     * pre: v,f,i y p tienen que estar entre 0 y 100
+     *  Comprueba que la suma de sus estadisticas sume 200
      * @param velocidad velocidad del personaje
      * @param fuerza fuerza del personaje
      * @param intuicion intuición del personaje
      * @param percepcion percepción del personaje
-     * @return String con el informe de situación del personaje.
+     * @return boolean con true si es correcta la suma o false si estan mal los datos
      */
     public static boolean situacionActual(byte velocidad,byte fuerza,byte intuicion, byte percepcion){
         if(velocidad+fuerza+intuicion+percepcion==200){
