@@ -6,7 +6,7 @@
 package Jacob.Daniel;
 
 /**
- *Funcion del personaje con sus parámetros.
+ *Funcion del personaje con sus parámetros, esta clase es para que Jacob, trabaje a parte.
  * @author Daniel
  * @author Jacob
  * @version 0.1
