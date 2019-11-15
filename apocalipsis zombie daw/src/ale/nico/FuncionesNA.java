@@ -25,6 +25,19 @@ public class FuncionesNA {
             return true;
     }else
      return false;
+        
 }
+    /**
+     * Esta función sirve para desplazarte hasta el baño en funcion de tu velocidad
+     * @param velocidad velocidad del personaje
+     * @return nos devuelve el resultado de los metros que se desplaza en int
+     */
+    public static int descripcionDesplazamiento(byte velocidad){
+        byte turno=1;
+        
+       int otroResultado=velocidad*5/100;
+        return otroResultado;
+        
+    }
 }
 
