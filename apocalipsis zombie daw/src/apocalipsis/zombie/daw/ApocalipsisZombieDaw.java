@@ -142,15 +142,27 @@ public class ApocalipsisZombieDaw {
            }
             
             //Turno 1
-            historia+="\n\n Escuchamos todos un grito desde la calle.";
-            historia+=FuncionesNS.descripcionReaccion(turno,"esperar");
-            historia+=FuncionesRJ.descripcionReaccion(turno,"esperar");
-            historia+=FuncionesJLJM.descripcionReaccion(turno,"mirar por la ventana",FuncionesJLJM.percepción);
-            historia+=FuncionesPI.descripcionReaccion(turno,"mirar por la ventana",FuncionesPI.percepcion);
-            historia+=FuncionesJD.descripcionReaccion(turno,"Mirar internet");
-            historia+=FuncionesNA.nombre+" avanza "+FuncionesNA.desplazamiento(FuncionesNA.velocidad)+" metros hacia el baño";
+            historia+="\n\n--------------Turno 1--------------\n Escuchamos todos un grito desde la calle.";
+            historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.descripcionReaccion(turno,"esperar");
+            historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.descripcionReaccion(turno,"esperar");
+            historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.descripcionReaccion(turno,"mirar por la ventana",FuncionesJLJM.percepción);
+            historia+="\n"+FuncionesPI.nombre+": "+FuncionesPI.descripcionReaccion(turno,"mirar por la ventana",FuncionesPI.percepcion);
+            historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.descripcionReaccion(turno,"Mirar internet");
+            historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.nombre+" avanza "+FuncionesNA.desplazamiento(FuncionesNA.velocidad)+" metros hacia el baño.\nEstás en la última fila de ordenadores del aula";
 
-            System.out.println(historia);
+            historia+="\n\n--------------Turno 2--------------\n";
+             historia+="Empezáis a escuchar más gente gritando. \nRick se da cuenta de que \nhay gente corriendo en dirección a calle comedias. ";
+             historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.descripcionReaccion(turno,"Pregunto qué está pasando");
+            historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.descripcionReaccion(turno,"mirar las noticias");
+            historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"ventana");
+            historia+="\n"+FuncionesPI.nombre+": "+FuncionesPI.descripcionReaccion(turno,"pregunto no se rick, parece falso");
+            historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.descripcionReaccion(turno,"llamar a mis padres");
+            historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"final del aula 5");
+
+    
+                System.out.println(historia);
+           
+    
     }
     
     /**
