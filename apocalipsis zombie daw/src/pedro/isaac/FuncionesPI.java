@@ -7,24 +7,24 @@ package pedro.isaac;
 
 /**
  * clase del personaje de pedro e isaac
+ *
  * @author Pedro
  * @author Isaac
  * @version 0.1
  * @since 0.1
  */
 public class FuncionesPI {
+
     public static String nombre; //Nombre del personaje
     public static byte velocidad; //Velocidad del personaje entre 0 y 100
     public static byte fuerza; //Fuerza del personaje entre 0 y 100
     public static byte intuicion; //Intuición del personaje entre 0 y 100
     public static byte percepcion; //Percepción del personaje entre 0 y 100
-    
-    static public boolean comprobar(byte velocidad, byte fuerza, byte intuicion,byte percepcion){
-    if(velocidad+fuerza+intuicion+percepcion==200){
-    return true;
-    }
-    return false;
+
+    static public boolean comprobar(byte velocidad, byte fuerza, byte intuicion, byte percepcion) {
+        if (velocidad + fuerza + intuicion + percepcion == 200) {
+            return true;
+        }
+        return false;
     }
 }
-    
-
