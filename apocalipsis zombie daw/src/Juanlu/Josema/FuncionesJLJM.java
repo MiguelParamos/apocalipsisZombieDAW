@@ -15,7 +15,7 @@ package Juanlu.Josema;
  */
 public class FuncionesJLJM {
 
-    public static String Rick;// Nombre del personaje
+    public static String nombre;// Nombre del personaje
     public static byte fuerza;//Velocidad del personaje entre 0 y 100
     public static byte velocidad;//Fuerza del personaje entre 0 y 100
     public static byte intuición;//Intuición del personaje entre 0 y 100
