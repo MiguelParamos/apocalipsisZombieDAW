@@ -4,7 +4,15 @@
  * and open the template in the editor.
  */
 package apocalipsis.zombie.daw;
+import Jacob.Daniel.FuncionesJ;
+import Jacob.Daniel.FuncionesJD;
+import Juanlu.Josema.FuncionesJLJM;
+import ale.nico.FuncionesNA;
 import alvaro.FuncionesA;
+import pedro.isaac.FuncionesPI;
+import java.util.Scanner;
+import noelia.silvia.FuncionesNS;
+import raul.javier.FuncionesRJ;
 /**
  *  Clase principal, que lanza el programa del apocalipsis zombie
  * @author Miguel Páramos
@@ -23,22 +31,52 @@ public class ApocalipsisZombieDaw {
      * @since 0.1
      */
     public static void main(String[] args) {
-        System.out.println("Cerebroooos!");
-        System.out.println("Juanlu y Jose");
-        System.out.println("pedro isaak");
-                
-                
-        System.out.println("NoeliaSilvia");
-        System.out.println("raul y javi");
-        System.out.println("ale,nico");
-        
-        System.out.println("Jacob,Daniel");
-        System.out.println("alvaro");
-        System.out.println("Miguel");
-        
-        System.out.println(situacionActual(
-                "Miguel",(byte)50,(byte)50,(byte)50,(byte)50));
-        
+            FuncionesJD.nombre="Sam";
+            FuncionesJD.velocidad=70;
+            FuncionesJD.fuerza=30;
+            FuncionesJD.intuicion=60;
+            FuncionesJD.percepcion=40;
+                    
+           FuncionesJLJM.nombre="Rick";
+           FuncionesJLJM.velocidad=40;
+           FuncionesJLJM.fuerza=40;
+           FuncionesJLJM.percepción=60;
+           FuncionesJLJM.intuición=60;
+           
+           FuncionesNS.nombre="Bryony";
+           FuncionesNS.velocidad=70;
+           FuncionesNS.fuerza=30;
+           FuncionesNS.intuicion=50;
+           FuncionesNS.percepcion=50;
+           
+           FuncionesNA.nombre="Puigdemont";
+           FuncionesNA.velocidad=55;
+           FuncionesNA.fuerza=30;
+           FuncionesNA.percepcion=65;
+           FuncionesNA.intuicion=50;
+           
+           FuncionesA.nombre="Jhonny Minmax";
+           FuncionesA.velocidad=75;
+           FuncionesA.fuerza=10;
+           FuncionesA.intuicion=55;
+           FuncionesA.percepcion=60;
+           
+           FuncionesPI.nombre="Foyonero";
+           FuncionesPI.velocidad=50;
+           FuncionesPI.fuerza=100;
+           FuncionesA.intuicion=50;
+           FuncionesA.percepcion=0;
+           
+           FuncionesRJ.nombre="CabezaNuca";
+           FuncionesRJ.fuerza=50;
+           FuncionesRJ.intuicion=50;
+           FuncionesRJ.velocidad=50;
+           FuncionesRJ.percepcion=50;
+           
+            //Aquí se cuenta todo lo que pasa
+           String historia="Es 15 de Noviembre en Cenec, "+FuncionesJD.nombre+", "+FuncionesJLJM.nombre+",\n "+FuncionesNS.nombre+", " +FuncionesNA.nombre+", "+FuncionesPI.nombre+", "+FuncionesA.nombre+"\ny "+FuncionesRJ.nombre+" están en clase de programación.";
+           
+           System.out.println(historia);
     }
     
     /**
@@ -55,5 +93,34 @@ public class ApocalipsisZombieDaw {
             return "\n-----------------\n|\t"+n+"\t|\n-----------------\nVelocidad:\t"+v+"\nFuerza: \t"+f+
                     "\nIntuición:\t"+i+"\nPercepción:\t"+p+"\n-----------------\n";
     }
+    
+    /**
+     * función que pide por teclado un String y lo devuelve
+     * @param mensaje mensaje que se muestra por teclado para pedir el String
+     * @return string metido por teclado
+     */
+    public static String pedirDatoTexto(String mensaje){
+        Scanner sc=new Scanner(System.in);
+        System.out.println(mensaje);
+        String nombre=sc.nextLine();
+        return nombre;
+    }
+        
+    /**
+     * función que pide por teclado un byte y lo devuelve
+     * post: el valor devuelto es positivo menor que 128
+     * @param mensaje mensaje que se muestra por teclado para pedir el byte
+     * @return byte positivo menor que 128
+     */
+    public static byte pedirDatoByte(String mensaje){
+        Scanner sc=new Scanner(System.in);
+        byte dato;
+        do{
+            System.out.println(mensaje);
+            dato=Byte.parseByte(sc.nextLine());
+        }while(dato<0||dato>127);
+        return dato;
+    }
+
     
 }
