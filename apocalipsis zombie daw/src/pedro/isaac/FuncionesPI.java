@@ -38,7 +38,7 @@ public class FuncionesPI {
      * Esta funcion comprueba nuestro nivel de percepcion y los casos que ocurren dependiendo del valor de esta
      */
     
-    public static String Descripcionreaccion(byte turno, String accion, byte percepcion){
+    public static String descripcionReaccion(byte turno, String accion, byte percepcion){
         accion="mirar por la ventana";
         if(turno==1&&accion.equals(accion)){
             if(percepcion<30){
