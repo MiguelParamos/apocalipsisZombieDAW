@@ -39,7 +39,20 @@ public class FuncionesNS {
             return false;
      
      }
-    }
+     
+     /**
+      * Respuesta al grito de la calle
+      * @param turno
+      * @param accion
+      * @return mensaje con la acción realizada, estar quieto
+      */
+       public static String descripcionReaccion (byte turno, String accion){
+     
+        if (turno==1&&accion=="esperar"){
+            }
+            return ("Me quedo mirando musarañas");
+    }   
+}
     
     
     
