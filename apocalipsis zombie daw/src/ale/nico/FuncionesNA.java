@@ -33,8 +33,7 @@ public class FuncionesNA {
      * @return nos devuelve el resultado de los metros que se desplaza en int
      */
     public static int descripcionDesplazamiento(byte velocidad){
-        byte turno=1;
-        
+   
        int otroResultado=velocidad*5/100;
         return otroResultado;
         
