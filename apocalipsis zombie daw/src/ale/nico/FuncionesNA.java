@@ -32,7 +32,7 @@ public class FuncionesNA {
      * @param velocidad velocidad del personaje
      * @return nos devuelve el resultado de los metros que se desplaza en int
      */
-    public static int descripcionDesplazamiento(byte velocidad){
+    public static int desplazamiento(byte velocidad){
    
        int otroResultado=velocidad*5/100;
         return otroResultado;
