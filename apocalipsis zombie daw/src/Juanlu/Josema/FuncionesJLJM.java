@@ -14,9 +14,9 @@ import java.util.Scanner;
 import noelia.silvia.FuncionesNS;
 import raul.javier.FuncionesRJ;
 
-
 /**
- *Clase Funciones personaje 
+ * Clase Funciones personaje
+ *
  * @author Jose Martin Martinez
  * @author Juan Luis Ceacero
  * @version 0.1
@@ -30,14 +30,13 @@ public class FuncionesJLJM {
     public static byte intuición;//Intuición del personaje entre 0 y 100
     public static byte percepción;//Percepción del personaje entre 0 y 100
 
-public static boolean comprobacionInicial(byte v,byte f,byte i, byte p) {
+    public static boolean comprobacionInicial(byte v, byte f, byte i, byte p) {
 
-   if(v+f+i+p==200){
-       return true;
-   }else
-       return false;
-   
-   
+        if (v + f + i + p == 200) {
+            return true;
+        } else {
+            return false;
+        }
 
-}
+    }
 }

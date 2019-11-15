@@ -26,7 +26,8 @@ public class FuncionesA {
      * @param percepcion percepción del personaje
      * @return boolean con true si es correcta la suma o false si estan mal los datos
      */
-    public static boolean situacionActual(byte velocidad,byte fuerza,byte intuicion, byte percepcion){
+    public static boolean comprobacionInicial
+        (byte velocidad,byte fuerza,byte intuicion, byte percepcion){
         if(velocidad+fuerza+intuicion+percepcion==200){
             return true;
         }else{
