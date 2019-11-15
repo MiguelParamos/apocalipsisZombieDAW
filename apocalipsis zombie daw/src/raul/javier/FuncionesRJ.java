@@ -18,4 +18,5 @@ public class FuncionesRJ {
     public static byte fuerza;//Fuerza del personaje entre 0 y 100
     public static byte intuicion;//Intuicion del personaje entre 0 y 100
     public static byte percepcion;//Percepcion del personaje entre 0 y 100
+   
 }
