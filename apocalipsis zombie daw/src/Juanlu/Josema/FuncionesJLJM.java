@@ -5,6 +5,15 @@
  */
 package Juanlu.Josema;
 
+import Jacob.Daniel.FuncionesJD;
+import Juanlu.Josema.FuncionesJLJM;
+import ale.nico.FuncionesNA;
+import alvaro.FuncionesA;
+import pedro.isaac.FuncionesPI;
+import java.util.Scanner;
+import noelia.silvia.FuncionesNS;
+import raul.javier.FuncionesRJ;
+
 
 /**
  *Clase Funciones personaje 
@@ -20,4 +29,15 @@ public class FuncionesJLJM {
     public static byte velocidad;//Fuerza del personaje entre 0 y 100
     public static byte intuición;//Intuición del personaje entre 0 y 100
     public static byte percepción;//Percepción del personaje entre 0 y 100
+
+public static boolean comprobacionInicial(byte v,byte f,byte i, byte p) {
+
+   if(v+f+i+p==200){
+       return false;
+   }else
+       return true;
+   
+   
+
+}
 }
