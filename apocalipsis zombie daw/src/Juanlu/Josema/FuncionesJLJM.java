@@ -39,4 +39,25 @@ public class FuncionesJLJM {
         }
 
     }
+    /**
+     * 
+     * @param turno turno en el que esta el juego
+     * @param accion acción que se realiza
+     * @param p la estadistica de percepción
+     * @return devuelve un string dependiendo de nuestros puntos de percepción
+     */
+    public static String descipcionReaccion(byte turno, String accion, byte p) {
+        if (turno == 1 && accion == "mirar por la ventana") {
+            if (p < 30) {
+                return "No veo nada extraño";
+            } else if (p >= 30 && p <= 90) {
+                return "Veo que el grito viene de la derecha";
+            } else {
+                return "Veo gente corriendo por la plaza de la derecha";
+            }
+
+        }
+        return "";
+    }
+    
 }

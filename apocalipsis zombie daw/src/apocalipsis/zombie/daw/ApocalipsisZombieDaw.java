@@ -30,6 +30,9 @@ public class ApocalipsisZombieDaw {
      * @since 0.1
      */
     public static void main(String[] args) {
+        
+            byte turno=1;
+        
             FuncionesJD.nombre="Sam";
             FuncionesJD.velocidad=70;
             FuncionesJD.fuerza=30;
@@ -63,8 +66,8 @@ public class ApocalipsisZombieDaw {
            FuncionesPI.nombre="Foyonero";
            FuncionesPI.velocidad=50;
            FuncionesPI.fuerza=100;
-           FuncionesA.intuicion=50;
-           FuncionesA.percepcion=0;
+           FuncionesPI.intuicion=50;
+           FuncionesPI.percepcion=0;
            
            FuncionesRJ.nombre="CabezaNuca";
            FuncionesRJ.fuerza=50;
@@ -137,7 +140,12 @@ public class ApocalipsisZombieDaw {
                     )){
                System.out.println("El jugador "+FuncionesRJ.nombre+" es incoherente!");
            }
+            
+            //Turno 1
+            historia+="\n\n Escuchamos todos un grito desde la calle.";
            
+            
+            
            System.out.println(historia);
     }
     
