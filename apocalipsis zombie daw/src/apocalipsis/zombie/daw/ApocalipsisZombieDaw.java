@@ -14,7 +14,9 @@ import alvaro.FuncionesA;
 public class ApocalipsisZombieDaw {
 
     /**
+     *  Programa del apocalipsis zombie que vamos programando
      * @param args the command line arguments
+     * @author Miguel Páramos
      * @author Noelia Rodríguez 
      * @author Silvia Sales 
      * @version 0.1
@@ -39,7 +41,16 @@ public class ApocalipsisZombieDaw {
         
     }
     
-    
+    /**
+     *  Imprime la situación actual de un personaje a través de sus variables
+     * pre: v,f,i y p tienen que estar entre 0 y 100
+     * @param n nombre del personaje
+     * @param v velocidad del personaje
+     * @param f fuerza del personaje
+     * @param i intuición del personaje
+     * @param p percepción del personaje
+     * @return String con el informe de situación del personaje.
+     */
     public static String situacionActual(String n, byte v,byte f,byte i, byte p){
             return "\n-----------------\n|\t"+n+"\t|\n-----------------\nVelocidad:\t"+v+"\nFuerza: \t"+f+
                     "\nIntuición:\t"+i+"\nPercepción:\t"+p+"\n-----------------\n";
