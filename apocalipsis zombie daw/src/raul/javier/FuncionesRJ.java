@@ -5,6 +5,8 @@
  */
 package raul.javier;
 
+import java.util.Scanner;
+
 /**
  * Funcion que establece las caracteristicas de nuestro personaje.
  * @author raul y javier
