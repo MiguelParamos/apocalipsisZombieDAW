@@ -63,8 +63,8 @@ public class ApocalipsisZombieDaw {
            FuncionesPI.nombre="Foyonero";
            FuncionesPI.velocidad=50;
            FuncionesPI.fuerza=100;
-           FuncionesA.intuicion=50;
-           FuncionesA.percepcion=0;
+           FuncionesPI.intuicion=50;
+           FuncionesPI.percepcion=0;
            
            FuncionesRJ.nombre="CabezaNuca";
            FuncionesRJ.fuerza=50;
