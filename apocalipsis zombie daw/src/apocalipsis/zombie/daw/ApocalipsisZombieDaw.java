@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package apocalipsis.zombie.daw;
-import Jacob.Daniel.FuncionesJ;
 import Jacob.Daniel.FuncionesJD;
 import Juanlu.Josema.FuncionesJLJM;
 import ale.nico.FuncionesNA;
