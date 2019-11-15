@@ -42,13 +42,13 @@ public class FuncionesNS {
      
      /**
       * Respuesta al grito de la calle
-      * @param turno
-      * @param accion
+      * @param turno vez en que se realiza una acción
+      * @param accion respuesta ante el suceso del turno
       * @return mensaje con la acción realizada, estar quieto
       */
        public static String descripcionReaccion (byte turno, String accion){
      
-        if (turno==1&&accion=="esperar"){
+        if (turno==1&&accion.equals("esperar")){
             }
             return ("Me quedo mirando musarañas");
     }   
