@@ -33,9 +33,9 @@ public class FuncionesJLJM {
 public static boolean comprobacionInicial(byte v,byte f,byte i, byte p) {
 
    if(v+f+i+p==200){
-       return false;
-   }else
        return true;
+   }else
+       return false;
    
    
 
