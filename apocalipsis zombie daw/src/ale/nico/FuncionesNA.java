@@ -6,8 +6,10 @@
 package ale.nico;
 
 /**
- *
- * @author nicoc
+ *clase principal, que lanza el programa
+ * @autor Ale,Nico
+ * @version 0.1
+ * @since 0.1
  */
 public class FuncionesNA {
     public static String nombre;
