@@ -6,8 +6,11 @@
 package Jacob.Daniel;
 
 /**
- *
- * @author 2DAW
+ *Funcion del personaje con sus parámetros.
+ * @author Daniel
+ * @author Jacob
+ * @version 0.1
+ * @since 0.1
  */
 public class FuncionesJ {
     

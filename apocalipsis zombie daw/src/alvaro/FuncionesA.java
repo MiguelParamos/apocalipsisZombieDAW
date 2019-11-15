@@ -6,8 +6,10 @@
 package alvaro;
 
 /**
- *
- * @author 2DAW
+ * Clase para las funciones de Alvaro
+ * @author alvaro
+ * @version 0.1
+ * @since 0.1
  */
 public class FuncionesA {
     public static String nombre;
