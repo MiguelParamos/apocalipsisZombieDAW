@@ -45,9 +45,12 @@ public class FuncionesPI {
                 return "No veo nada extraño";
             }else if(percepcion>=30&&percepcion<=90){
                 return "Veo que el grito viene de la derecha";
-            }else if(percepcion>90){
+            }else{
                 return "Veo gente corriendo por la plaza de la derecha";
             }
         }
+        return "";
     
-
+    }
+    
+}
