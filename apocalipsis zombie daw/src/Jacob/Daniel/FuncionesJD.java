@@ -35,13 +35,12 @@ public class FuncionesJD {
         }
     }
 
-    public static int combate(String nombre1,String nombre2,byte fuerza1,byte fuerza2,byte velocidad1 ,byte velocidad2) {
+    public static String combate(String nombre1,String nombre2,byte fuerza1,byte fuerza2,byte velocidad1 ,byte velocidad2) {
         if (velocidad1 > velocidad2) {
-            System.out.println(nombre1 + "golpea a "+nombre2);
-            return Math.abs(fuerza2 - fuerza1);
+            return nombre1 + " golpea a "+nombre2+" y pierde "+Math.abs(fuerza2 - fuerza1)+" de vida";
         } else {
             System.out.println(nombre2+" golpea a" + nombre1);
-            return Math.abs(fuerza2 - fuerza1);
+            return nombre2 + " golpea a "+nombre1+" y pierde "+Math.abs(fuerza2 - fuerza1)+" de vida";
         }
     }
 }
