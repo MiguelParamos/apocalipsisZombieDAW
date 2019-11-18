@@ -60,7 +60,8 @@ public class FuncionesNA {
                     return "mitad aula";
                 case "mitad del aula":
                     return "en la puerta";
-                case "en la puerta o en tablon de anuncios":
+                   case "en la puerta":
+                case "en el tablon":
                     return "escalera bajada primera planta";
 
             }
