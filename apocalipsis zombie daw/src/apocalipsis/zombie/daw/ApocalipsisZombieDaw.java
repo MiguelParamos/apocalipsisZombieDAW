@@ -70,6 +70,7 @@ public class ApocalipsisZombieDaw {
            FuncionesPI.percepcion=0;
            
            FuncionesRJ.nombre="CabezaNuca";
+           FuncionesRJ.vida="100";
            FuncionesRJ.fuerza=50;
            FuncionesRJ.intuicion=50;
            FuncionesRJ.velocidad=50;
