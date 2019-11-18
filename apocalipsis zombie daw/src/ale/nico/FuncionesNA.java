@@ -57,6 +57,8 @@ public class FuncionesNA {
                     return "escalera bajada primera planta";
                 case "en mitad de la escalera":
                     return "estoy en la puerta";
+                case "estoy en mitad de la sala":
+                    return "estoy fuera del centro";
             }
         }else{
             switch(mensaje){
@@ -69,7 +71,8 @@ public class FuncionesNA {
                     return "en mitad de la escalera";
                 case "en mitad de la escalera":  
                     return "estoy en mitad de la sala";
-                   
+                case  "estoy en mitad de la sala":
+                    return "estoy en la puerta";
             }
         }
             return "";
