@@ -46,8 +46,60 @@ public class FuncionesRJ {
         
         
         }
-        
-     
-        
     }
+     /**
+      * Funcion que calcula la distancia final en relacion con tu posicion inicial.
+      * @param distancia Variable que indica la distancia.
+      * @param mensaje Variable que muestra un mensaje en funcion de donde nos encontremos
+      * @return Devuelve los mensajes segun donde nos encontremos.
+      */   
+     public static String dondeLlego8(int distancia,String mensaje){
+         
+         if (distancia>=3){
+             
+             switch(mensaje){
+                 
+                 case "ventana":
+                     
+                     return"mitad aula";
+                     
+                 case "mitad aula":
+                     
+                     return"estas en la puerta";
+                     
+                 case "en la puerta":
+                     
+                     return "escaleras abajo";
+                     
+             }
+             }else{
+                    
+               switch(mensaje){
+                 
+                 case "ventana":
+                     
+                     return"por la fila 3";
+                     
+                 case "mitad aula":
+                     
+                     return"por la ultima fila";
+                     
+                 case "en la puerta":
+                 case "en el tablon":
+                     
+                     return "en mitad de las escaleras";
+                     
+             }
+             }
+                
+             return"";
+         
+     }
 }
+    
+    
+    
+    
+    
+    
+

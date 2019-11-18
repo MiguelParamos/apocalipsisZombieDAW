@@ -64,7 +64,56 @@ public class FuncionesNS {
                     return "";
        }    
     }
-}
+
+       /**
+        * Funcion calcular distancia final en función de punto de partida
+        * @param distancia indica los metros recorridos
+        * @param mensaje indica la posición en la que se encuentra*
+        * @return posición
+        */
+       
+    public static String dondeLlego (byte turno, int distancia,String mensaje){
+            
+        if (turno==3&&distancia>=3&&mensaje.equals("ventana")) 
+           {
+            switch (mensaje) //Devolver el mensaje dependiendo de la posición introducidan si la distancia>=3metros 
+              {
+                case "ventana":
+                    return "Mitad del aula";
+                
+                case "mitad de clase":
+                    return "En la puerta";
+    
+                case "Puerta":
+                    return "En las escaleras";
+                    
+                case "ablón":
+                    return "En las escaleras";
+              }   
+
+            }else //Devolver el mensaje dependiendo de la posición introducidan si la distancia<3 metros
+                {
+                 switch (mensaje)
+                    {
+                    case "ventana":
+                        return "Por la fila 3";
+
+                    case "mitad de clase":
+                        return "Por la última fila";
+      
+                    case "tablón":
+                        return "En mitad de las escaleras";
+
+                    case "puerta":
+                        return "En mitad de las escaleras";  
+                    }
+                }
+             return "";
+        }
+    }
+
+
+
     
     
     
