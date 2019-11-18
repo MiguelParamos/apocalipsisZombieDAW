@@ -38,6 +38,7 @@ public class ApocalipsisZombieDaw {
             FuncionesJD.fuerza=30;
             FuncionesJD.intuicion=60;
             FuncionesJD.percepcion=40;
+            FuncionesJD.vida=100;
                     
            FuncionesJLJM.nombre="Rick";
            FuncionesJLJM.velocidad=40;
