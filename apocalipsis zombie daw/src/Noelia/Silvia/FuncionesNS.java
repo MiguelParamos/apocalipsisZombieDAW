@@ -72,9 +72,9 @@ public class FuncionesNS {
         * @return posición
         */
        
-    public static String dondeLlego (byte turno, int distancia,String mensaje){
+    public static String dondeLlego (int distancia,String mensaje){
             
-        if (turno==3&&distancia>=3&&mensaje.equals("ventana")) 
+        if (distancia>=3&&mensaje.equals("ventana")) 
            {
             switch (mensaje) //Devolver el mensaje dependiendo de la posición introducidan si la distancia>=3metros 
               {
