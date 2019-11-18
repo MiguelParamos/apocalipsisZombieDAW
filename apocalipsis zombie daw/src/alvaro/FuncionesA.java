@@ -39,8 +39,10 @@ public class FuncionesA {
      
         if (turno==3&&accion.equals("escuchar")){
            return ("Jhonny Minmax se despierta, no es como si estuviera dormido en clase ni nada parecido...");
-            } else if(turno==4&&accion.equals("preguntar")){
+            } else if(turno==4&&accion.equals("preguntar que pasa")){
                 return("Todos estan en caos y Natalia esta en el suelo recibiendo una paliza. Pregunto tranquilamente que esta pasando aqui.");
+            }else if(turno==5&&accion.equals("ayudar")){
+                return("Ayudo a Natalia a levantarse.");
             }
         return "";
  
