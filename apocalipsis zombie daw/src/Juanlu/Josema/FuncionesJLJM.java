@@ -90,9 +90,14 @@ public class FuncionesJLJM {
 
                     return "Estás en medio de las escaleras";
                 case "Estás en el tablón":
-
+                   
                     return "Estás en medio de las escaleras";
-
+                case "Estás en medio de las escaleras":
+                        
+                     return "Estás en la primera planta";
+                     
+                     
+                        
             }
         }
 

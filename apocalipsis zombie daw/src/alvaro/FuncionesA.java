@@ -43,6 +43,8 @@ public class FuncionesA {
                 return("Todos estan en caos y Natalia esta en el suelo recibiendo una paliza. Pregunto tranquilamente que esta pasando aqui.");
             }else if(turno==5&&accion.equals("ayudar")){
                 return("Ayudo a Natalia a levantarse.");
+            }else if(turno==6&&accion.equals("coger el telefono")){
+                return("Ahora que tengo las manos libres, cojo el teléfono que estaba sonando.");
             }
         return "";
  
