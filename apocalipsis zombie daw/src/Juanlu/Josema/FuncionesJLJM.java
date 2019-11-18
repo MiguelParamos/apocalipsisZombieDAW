@@ -60,6 +60,15 @@ public class FuncionesJLJM {
         return "";
     }
     
+    public static String dondeLlego (int distancia,String mensaje){
+
+       
+        if (distancia>=2&&mensaje.equals("ventana")) {
+            return "Estoy por la mitad del aula";
+        }
+        return "";
+    }
+    
 }
 /**
  * Si es menor de 4 metros en mitad del aula

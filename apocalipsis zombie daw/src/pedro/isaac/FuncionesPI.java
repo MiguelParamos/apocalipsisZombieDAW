@@ -39,8 +39,7 @@ public class FuncionesPI {
      */
     
     public static String descripcionReaccion(byte turno, String accion, byte percepcion){
-        accion="mirar por la ventana";
-        if(turno==1&&accion.equals(accion)){
+        if(turno==1&&accion.equals("mirar por la ventana")){
             if(percepcion<30){
                 return "No veo nada extraño";
             }else if(percepcion>=30&&percepcion<=90){
@@ -48,6 +47,15 @@ public class FuncionesPI {
             }else{
                 return "Veo gente corriendo por la plaza de la derecha";
             }
+        }
+        return "";
+    
+    }
+    
+    
+    public static String descripcionReaccion(byte turno, String accion){
+        if(turno==2&&accion.equals("pregunto no se rick, parece falso")){
+            return "No me responde nadie nada.";
         }
         return "";
     
