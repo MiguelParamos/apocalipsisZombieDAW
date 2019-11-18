@@ -47,5 +47,38 @@ public class FuncionesNA {
         }
         return "";
     }
+    /**
+     * 
+     * @param distancia la distancia que tenmos
+     * @param mensaje muestra un mensaje donde nos encontramos
+     * @return  devuelve donde estamos
+     */
+    public static String dondeLlegamos(int distancia, String mensaje) {
+        if (distancia >= 3) {
+            switch (mensaje) {
+                case "ventana":
+                    return "mitad aula";
+                case "mitad del aula":
+                    return "en la puerta";
+                case "en la puerta o en tablon de anuncios":
+                    return "escalera bajada primera planta";
+
+            }
+        }else if (distancia>6){
+            switch(mensaje){
+                case "ventana":
+                    return "por la fila 3";
+                case "mitad del aula":
+                    return "por la ultima fila";
+                case "en la puerta":
+                case "en el tablon":
+                    return "en mitad de la escaler";
+                    
+                   
+            }
+        }
+            return "";
+        
+    }
 }
 
