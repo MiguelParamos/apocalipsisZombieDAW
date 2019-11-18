@@ -31,8 +31,8 @@ public class FuncionesJD {
                 System.out.println("Mis padres no saben nada raro");
                 return "No saben nada raro";
             }else{
-                if (turno== 4&& accion.equals("coger llaves de natalia junto a cabezanuca")){
-                    System.out.println(FuncionesJD.nombre+" ha cogido las llaves junto a Cabezanuca.");
+                if (turno== 4 && accion.equals("coger llaves de natalia junto a cabezanuca")){
+                    return FuncionesJD.nombre+" ha cogido las llaves junto a Cabezanuca.";
                 }
 
             }
