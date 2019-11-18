@@ -65,7 +65,7 @@ public class FuncionesNS {
             }
        if (turno==4&&accion.equals("Coger nuestros abrigos"))
             {
-           return "Me quedo mirando musarañas";
+           return "Cogemos nuestros abrigos, hacemos un nudo con ellos para saltar por la ventana";
             }  
         
        return "";
