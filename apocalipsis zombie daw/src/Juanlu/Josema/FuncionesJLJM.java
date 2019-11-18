@@ -94,3 +94,6 @@ public class FuncionesJLJM {
     }
 
 }
+/**
+ * Si es menor de 4 metros en mitad del aula
+ */
