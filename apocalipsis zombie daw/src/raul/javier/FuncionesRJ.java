@@ -42,6 +42,11 @@ public class FuncionesRJ {
             
         }
             
+            if (turno==4&&accion.equals("coger llaves de natalia")){
+                
+                return "Cojo las llaves de Natalia";
+            }
+            
         return"";
         
         
