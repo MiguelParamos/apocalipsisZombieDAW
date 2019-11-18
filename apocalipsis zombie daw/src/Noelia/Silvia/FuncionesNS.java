@@ -20,6 +20,7 @@ public class FuncionesNS {
     public static byte fuerza; //Fuerza del personaje entre 0 y 100 30
     public static byte intuicion; //Intuición del personaje entre 0 y 100 50
     public static byte percepcion; //Percepción del personaje entre 0 y 100 50
+    public static byte vida; // Vida del personaje entre 0 y 100
 
     
     /**
@@ -67,6 +68,7 @@ public class FuncionesNS {
             {
            return "Cogemos nuestros abrigos, hacemos un nudo con ellos para saltar por la ventana";
             }  
+         
         
        return "";
                     
@@ -117,6 +119,11 @@ public class FuncionesNS {
                 }
              return "";
         }
+//     Quinto turno, si se mira el móvil, se ve emergencia, ataque en málaga, por favor acuda A PIE a uno de los refugios preparados, 
+//     tiene mapa de los puntos mas cercano en: http://emergencias.gov.es. Cuando entráis, el enlace está roto.
+
+    
+    
     }
 
 
