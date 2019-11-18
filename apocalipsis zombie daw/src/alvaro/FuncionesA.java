@@ -34,5 +34,16 @@ public class FuncionesA {
             return false;
         }    
     }
+        
+    public static String descripcionReaccion (byte turno, String accion){
+     
+        if (turno==3&&accion.equals("escuchar")){
+           return ("Jhonny Minmax se despierta, no es como si estuviera dormido en clase ni nada parecido...");
+            }
+        return "";
+ 
+
+    }
 }
+
 
