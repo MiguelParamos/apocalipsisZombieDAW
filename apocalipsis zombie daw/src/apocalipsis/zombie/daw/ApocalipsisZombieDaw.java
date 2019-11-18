@@ -171,7 +171,18 @@ public class ApocalipsisZombieDaw {
             historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.combate(FuncionesJD.nombre,"Natalia",FuncionesJD.fuerza,(byte)100,FuncionesJD.velocidad,(byte)40);
             historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"en el tablon");
             historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"escuchar");
-    
+     
+            turno++;
+                historia+="\n\n--------------Turno 4--------------\n";
+            historia+="Natalia yace inconsciente en el suelo del aula 5,\n por un golpe de "+FuncionesJD.nombre+".\n Los que están abajo en las escaleras\n ven mucha gente agolpada cerca de la puerta.";
+            historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.descripcionReaccion(turno,"Coger nuestros abrigos");
+            historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.descripcionReaccion(turno,"coger llaves de natalia junto a sam");
+            historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"Estás en la puerta");
+            historia+="\n"+FuncionesPI.nombre+": "+FuncionesPI.descripcionReaccion(turno,"Consultar redes sociales");
+            historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.descripcionReaccion(turno,"coger llaves de natalia junto a cabezanuca");
+            historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"en mitad de la escalera");
+            historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"preguntar que pasa");
+     
                 System.out.println(historia);
            
     
