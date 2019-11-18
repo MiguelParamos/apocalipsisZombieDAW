@@ -60,7 +60,12 @@ public class FuncionesJLJM {
         }
         return "";
     }
-
+/**
+ * 
+ * @param distancia velocidad a la que se mueve el jugador
+ * @param mensaje ubicación del personaje
+ * @return 
+ */
     public static String dondeLlego(int distancia, String mensaje) {
 
         if (distancia >= 3) {
