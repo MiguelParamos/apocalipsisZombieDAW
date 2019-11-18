@@ -53,7 +53,7 @@ public class FuncionesRJ {
       * @param mensaje Variable que muestra un mensaje en funcion de donde nos encontremos
       * @return Devuelve los mensajes segun donde nos encontremos.
       */   
-     public static String dondeLlego8(int distancia,String mensaje){
+     public static String dondeLlego(int distancia,String mensaje){
          
          if (distancia>=3){
              

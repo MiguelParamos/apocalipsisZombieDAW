@@ -162,15 +162,15 @@ public class ApocalipsisZombieDaw {
             historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"final del aula 5");
 
             turno++;
-            historia+="\n\n--------------Turno 3--------------\n";
+                historia+="\n\n--------------Turno 3--------------\n";
             historia+="Natalia sube a las aulas a decir que \ntodo el mundo fuera, que la gente está\n huyendo de algo que viene, que cree\n que es un loco que anda por ahí";
             historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad),"ventana");
             historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"ventana");
-            historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"mitad del aula");
+            historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"Estás en mitad del aula");
             historia+="\n"+FuncionesPI.nombre+": "+FuncionesPI.dondeLlego(FuncionesNA.desplazamiento(FuncionesPI.velocidad),"ventana");
             historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.combate(FuncionesJD.nombre,"Natalia",FuncionesJD.fuerza,(byte)100,FuncionesJD.velocidad,40);
             historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"tablón de anuncios");
-
+            historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"escuchar");
     
                 System.out.println(historia);
            
