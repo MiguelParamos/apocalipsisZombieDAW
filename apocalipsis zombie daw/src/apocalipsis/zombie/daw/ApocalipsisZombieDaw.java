@@ -50,6 +50,7 @@ public class ApocalipsisZombieDaw {
            FuncionesNS.fuerza=30;
            FuncionesNS.intuicion=50;
            FuncionesNS.percepcion=50;
+           FuncionesNS.vida=100;
            
            FuncionesNA.nombre="Puigdemont";
            FuncionesNA.velocidad=55;
