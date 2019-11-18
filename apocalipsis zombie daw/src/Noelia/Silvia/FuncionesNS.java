@@ -87,7 +87,7 @@ public class FuncionesNS {
                 case "Puerta":
                     return "En las escaleras";
                     
-                case "ablón":
+                case "tablón":
                     return "En las escaleras";
               }   
 

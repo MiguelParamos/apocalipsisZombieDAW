@@ -169,7 +169,7 @@ public class ApocalipsisZombieDaw {
             historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"Estás en mitad del aula");
             historia+="\n"+FuncionesPI.nombre+": "+FuncionesPI.dondeLlego(FuncionesNA.desplazamiento(FuncionesPI.velocidad),"ventana");
             historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.combate(FuncionesJD.nombre,"Natalia",FuncionesJD.fuerza,(byte)100,FuncionesJD.velocidad,40);
-            historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"tablón de anuncios");
+            historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"en el tablon");
             historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"escuchar");
     
                 System.out.println(historia);

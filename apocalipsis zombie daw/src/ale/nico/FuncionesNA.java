@@ -45,15 +45,6 @@ public class FuncionesNA {
         if (distancia>=2&&mensaje.equals("final del aula 5")) {
             return "Estoy por el tablón de anuncios de la primera planta";
         }
-        return "";
-    }
-    /**
-     * 
-     * @param distancia la distancia que tenmos
-     * @param mensaje muestra un mensaje donde nos encontramos
-     * @return  devuelve donde estamos
-     */
-    public static String dondeLlegamos(int distancia, String mensaje) {
         if (distancia >= 3) {
             switch (mensaje) {
                 case "ventana":
@@ -65,7 +56,7 @@ public class FuncionesNA {
                     return "escalera bajada primera planta";
 
             }
-        }else if (distancia>6){
+        }else{
             switch(mensaje){
                 case "ventana":
                     return "por la fila 3";
