@@ -16,6 +16,7 @@ import java.util.Scanner;
 public class FuncionesRJ {
     
     public static String nombre;//Nombre del personaje
+     public static String vida;//vida del personaje
     public static byte velocidad;//Velocidad del personaje entre 0 y 100
     public static byte fuerza;//Fuerza del personaje entre 0 y 100
     public static byte intuicion;//Intuicion del personaje entre 0 y 100
@@ -40,18 +41,22 @@ public class FuncionesRJ {
             
             return "No veo nada anormal";
             
-        }
+          
+            }
             
-            if (turno==4&&accion.equals("coger llaves de natalia")){
+             if (turno==4&&accion.equals("coger llaves de natalia junto a sam")){
                 
                 return "Cojo las llaves de Natalia";
-            }
+            
+        }
+            
+        }   
             
         return"";
         
         
         }
-    }
+    
      /**
       * Funcion que calcula la distancia final en relacion con tu posicion inicial.
       * @param distancia Variable que indica la distancia.
