@@ -39,8 +39,9 @@ public class FuncionesJLJM {
         }
 
     }
+
     /**
-     * 
+     *
      * @param turno turno en el que esta el juego
      * @param accion acción que se realiza
      * @param p la estadistica de percepción
@@ -59,14 +60,37 @@ public class FuncionesJLJM {
         }
         return "";
     }
-    
-    public static String dondeLlego (int distancia,String mensaje){
 
-       
-        if (distancia>=2&&mensaje.equals("ventana")) {
-            return "Estoy por la mitad del aula";
+    public static String dondeLlego(int distancia, String mensaje) {
+
+        if (distancia >= 3) {
+            switch (mensaje) {
+
+                case "ventana":
+                    return "Estás en mitad del aula";
+                case "Estás en mitad del aula":
+                    return "Estás en la puerta";
+                case "Estás en la puerta":
+                    return "Has bajado las escaleras, estás en la 1ª planta";
+
+            }
+        } else {
+            switch (mensaje) {
+                case "ventana":
+                    return "Estás en la fila 3";
+                case "Estás en mitad del aula":
+                    return "Estás por la última fila";
+                case "Estás en la puerta":
+
+                    return "Estás en medio de las escaleras";
+                case "Estás en el tablón":
+
+                    return "Estás en medio de las escaleras";
+
+            }
         }
+
         return "";
     }
-    
+
 }
