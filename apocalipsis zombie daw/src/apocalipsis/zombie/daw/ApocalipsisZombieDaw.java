@@ -38,18 +38,21 @@ public class ApocalipsisZombieDaw {
             FuncionesJD.fuerza=30;
             FuncionesJD.intuicion=60;
             FuncionesJD.percepcion=40;
+            FuncionesJD.vida=100;
                     
            FuncionesJLJM.nombre="Rick";
            FuncionesJLJM.velocidad=40;
            FuncionesJLJM.fuerza=40;
            FuncionesJLJM.percepción=60;
            FuncionesJLJM.intuición=60;
+           FuncionesJLJM.vida=100;
            
            FuncionesNS.nombre="Bryony";
            FuncionesNS.velocidad=70;
            FuncionesNS.fuerza=30;
            FuncionesNS.intuicion=50;
            FuncionesNS.percepcion=50;
+           FuncionesNS.vida=100;
            
            FuncionesNA.nombre="Puigdemont";
            FuncionesNA.velocidad=55;
@@ -72,7 +75,7 @@ public class ApocalipsisZombieDaw {
            FuncionesPI.vida=100;
            
            FuncionesRJ.nombre="CabezaNuca";
-           FuncionesRJ.vida="100";
+           FuncionesRJ.vida=100;
            FuncionesRJ.fuerza=50;
            FuncionesRJ.intuicion=50;
            FuncionesRJ.velocidad=50;
@@ -186,9 +189,22 @@ public class ApocalipsisZombieDaw {
             historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"en mitad de la escalera");
             historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"preguntar que pasa");
      
-                System.out.println(historia);
-           
+            turno++;
+                historia+="\n\n--------------Turno 5--------------\n";
+                historia+=((recibeNotificación(FuncionesJD.percepcion)?FuncionesJD.nombre+" nota que le vibra el teléfono ":""))+"\n";
+                historia+=((recibeNotificación(FuncionesJLJM.percepción)?FuncionesJLJM.nombre+" nota que le vibra el teléfono ":""))+"\n";
+                historia+=((recibeNotificación(FuncionesNS.percepcion)?FuncionesNS.nombre+" nota que le vibra el teléfono ":""))+"\n";
+                historia+=((recibeNotificación(FuncionesNA.percepcion)?FuncionesNA.nombre+" nota que le vibra el teléfono ":""))+"\n";
+                historia+=((recibeNotificación(FuncionesA.percepcion)?FuncionesA.nombre+" nota que le vibra el teléfono ":""))+"\n";
+                historia+=((recibeNotificación(FuncionesRJ.percepcion)?FuncionesRJ.nombre+" nota que le vibra el teléfono ":""))+"\n";
+                
+                historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"ayudar");
+                
     
+                
+                
+                System.out.println(historia);
+                
     }
     
     /**
@@ -204,7 +220,7 @@ public class ApocalipsisZombieDaw {
     public static String situacionActual(String n, byte v,byte f,byte i, byte p){
             return "\n-----------------\n|\t"+n+"\t|\n-----------------\nVelocidad:\t"+v+"\nFuerza: \t"+f+
                     "\nIntuición:\t"+i+"\nPercepción:\t"+p+"\n-----------------\n";
-    }
+            }
     
     /**
      * función que pide por teclado un String y lo devuelve
@@ -233,6 +249,13 @@ public class ApocalipsisZombieDaw {
         }while(dato<0||dato>127);
         return dato;
     }
+    
+   public static boolean recibeNotificación(byte percepcion){
+       if(percepcion>=50){
+           return true;
+       }
+       return false;
+   }
 
     
 }

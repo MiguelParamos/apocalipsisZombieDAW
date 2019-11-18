@@ -29,7 +29,8 @@ public class FuncionesJLJM {
     public static byte velocidad;//Fuerza del personaje entre 0 y 100
     public static byte intuición;//Intuición del personaje entre 0 y 100
     public static byte percepción;//Percepción del personaje entre 0 y 100
-
+    public static byte vida;//Vide del personaje con 100 de base
+    
     public static boolean comprobacionInicial(byte v, byte f, byte i, byte p) {
 
         if (v + f + i + p == 200) {
@@ -99,6 +100,7 @@ public class FuncionesJLJM {
     }
 
 }
+
 /**
- * Si es menor de 4 metros en mitad del aula
+ *
  */
