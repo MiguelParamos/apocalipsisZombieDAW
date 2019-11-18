@@ -44,6 +44,7 @@ public class ApocalipsisZombieDaw {
            FuncionesJLJM.fuerza=40;
            FuncionesJLJM.percepción=60;
            FuncionesJLJM.intuición=60;
+           FuncionesJLJM.vida=100;
            
            FuncionesNS.nombre="Bryony";
            FuncionesNS.velocidad=70;
