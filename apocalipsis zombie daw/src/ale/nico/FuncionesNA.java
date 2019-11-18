@@ -39,5 +39,13 @@ public class FuncionesNA {
         return otroResultado;
         
     }
+    public static String dondeLlego (String mensaje){
+        Scanner scan = new Scanner(System.in);
+       
+        if (desplazamiento(velocidad)>4) {
+            mensaje="Estoy por el tablón de anuncios de la primera planta";
+        }
+        return mensaje;
+    }
 }
 
