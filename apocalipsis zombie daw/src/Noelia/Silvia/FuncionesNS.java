@@ -57,14 +57,11 @@ public class FuncionesNS {
      
         if (turno==1&&accion.equals("esperar")){
            return ("Me quedo mirando musarañas");
-            }  if (turno==2&&accion.equals("Pregunto qué está pasando")){
-                    return ("¿Qué está pasando Rick?");
+            }  
+            if (turno==2&&accion.equals("Pregunto qué está pasando")){
+                    return "¿Qué está pasando Rick?";
                 }else{
                     return "";
-             
- 
-
-
        }    
     }
 }

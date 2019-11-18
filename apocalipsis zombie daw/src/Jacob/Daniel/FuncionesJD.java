@@ -28,7 +28,7 @@ public class FuncionesJD {
             return "No veo nada anormal";
         }else{
         if (turno == 2 && accion.equals("llamar a mis padres")) {
-            System.out.println("No saben nada raro");
+            System.out.println("Mis padres no saben nada raro");
             return "No saben nada raro";
     }
             return"";

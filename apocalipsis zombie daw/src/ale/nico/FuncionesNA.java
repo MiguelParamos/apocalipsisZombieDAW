@@ -39,13 +39,13 @@ public class FuncionesNA {
         return otroResultado;
         
     }
-    public static String dondeLlego (String mensaje){
-        Scanner scan = new Scanner(System.in);
+    public static String dondeLlego (int distancia,String mensaje){
+
        
-        if (desplazamiento(velocidad)>4) {
-            mensaje="Estoy por el tablón de anuncios de la primera planta";
+        if (distancia>=2&&mensaje.equals("final del aula 5")) {
+            return "Estoy por el tablón de anuncios de la primera planta";
         }
-        return mensaje;
+        return "";
     }
 }
 
