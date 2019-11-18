@@ -56,6 +56,8 @@ public class FuncionesPI {
     public static String descripcionReaccion(byte turno, String accion){
         if(turno==2&&accion.equals("pregunto no se rick, parece falso")){
             return "No me responde nadie nada.";
+        }else if(turno==4&&accion.equals("Consultar redes sociales")){
+            return "He visto el mensaje";
         }
         return "";
     

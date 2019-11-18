@@ -55,14 +55,21 @@ public class FuncionesNS {
             
        public static String descripcionReaccion (byte turno, String accion){
      
-        if (turno==1&&accion.equals("esperar")){
+        if (turno==1&&accion.equals("esperar"))
+            {
            return ("Me quedo mirando musarañas");
             }  
-            if (turno==2&&accion.equals("Pregunto qué está pasando")){
-                    return "¿Qué está pasando Rick?";
-                }else{
-                    return "";
-       }    
+        if (turno==2&&accion.equals("Pregunto qué está pasando"))
+            {
+            return "¿Qué está pasando Rick?";
+            }
+       if (turno==4&&accion.equals("Coger nuestros abrigos"))
+            {
+           return "Cogemos nuestros abrigos, hacemos un nudo con ellos para saltar por la ventana";
+            }  
+        
+       return "";
+                    
     }
 
        /**
