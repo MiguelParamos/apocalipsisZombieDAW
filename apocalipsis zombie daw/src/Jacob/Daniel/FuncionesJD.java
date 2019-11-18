@@ -35,17 +35,13 @@ public class FuncionesJD {
         }
     }
 
-    public static int combate(byte turno, String accion, byte velocidad,
-            byte fuerza, byte velocidad2, byte fuerza2, String Natalia) {
-
-        velocidad2 = 40;
-        fuerza2 = 100;
-        if (FuncionesJD.velocidad > velocidad2) {
-            System.out.println(FuncionesJD.nombre + "golpea a " + Natalia);
-            return fuerza2 - FuncionesJD.fuerza;
+    public static int combate(String nombre1,String nombre2,byte fuerza1,byte fuerza2,byte velocidad1 ,byte velocidad2) {
+        if (velocidad1 > velocidad2) {
+            System.out.println(nombre1 + "golpea a "+nombre2);
+            return Math.abs(fuerza2 - fuerza1);
         } else {
-            System.out.println(Natalia + " golpea a" + FuncionesJD.nombre);
-            return fuerza2 - FuncionesJD.fuerza;
+            System.out.println(nombre2+" golpea a" + nombre1);
+            return Math.abs(fuerza2 - fuerza1);
         }
     }
 }
