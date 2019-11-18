@@ -40,18 +40,22 @@ public class FuncionesRJ {
             
             return "No veo nada anormal";
             
-        }
+          
+            }
             
-            if (turno==4&&accion.equals("coger llaves de natalia")){
+             if (turno==4&&accion.equals("coger llaves de natalia junto a sam")){
                 
                 return "Cojo las llaves de Natalia";
-            }
+            
+        }
+            
+        }   
             
         return"";
         
         
         }
-    }
+    
      /**
       * Funcion que calcula la distancia final en relacion con tu posicion inicial.
       * @param distancia Variable que indica la distancia.

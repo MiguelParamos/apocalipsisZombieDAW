@@ -20,7 +20,7 @@ public class FuncionesNA {
     public static byte fuerza;// fuerza del personaje entre 0 y 100
     public static byte intuicion; //intuicion del personaje entre 0 y 100
     public static byte percepcion;//intuicion del personaje entre 0 y 100
-    
+    public static byte vida;//vida que tiene nuestro personaje (100)
     public static boolean  comprobacionInicial (byte velocidad,byte fuerza, byte intuicion, byte percepcion){
         if (velocidad+fuerza+intuicion+percepcion==200) {
             return true;
@@ -45,6 +45,7 @@ public class FuncionesNA {
         if (distancia>=2&&mensaje.equals("final del aula 5")) {
             return "Estoy por el tablón de anuncios de la primera planta";
         }
+        
         if (distancia >= 3) {
             switch (mensaje) {
                 case "ventana":
@@ -54,7 +55,8 @@ public class FuncionesNA {
                    case "en la puerta":
                 case "en el tablon":
                     return "escalera bajada primera planta";
-
+                case "en mitad de la escalera":
+                    return "estoy en la puerta";
             }
         }else{
             switch(mensaje){
@@ -64,8 +66,9 @@ public class FuncionesNA {
                     return "por la ultima fila";
                 case "en la puerta":
                 case "en el tablon":
-                    return "en mitad de la escaler";
-                    
+                    return "en mitad de la escalera";
+                case "en mitad de la escalera":  
+                    return "estoy en mitad de la sala";
                    
             }
         }
