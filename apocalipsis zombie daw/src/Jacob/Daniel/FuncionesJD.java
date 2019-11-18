@@ -20,6 +20,7 @@ public class FuncionesJD {
     public static byte fuerza; //Fuerza de personaje.
     public static byte intuicion; //Intuicion del personaje.
     public static byte percepcion; //Percepcion del personaje.
+    public static byte vida; //Vida del personaje.
 
     public static String descripcionReaccion(byte turno, String accion) {
 
