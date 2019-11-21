@@ -73,7 +73,7 @@ public class FuncionesNA {
                 case "en mitad de la escalera":  
                     return "estoy en mitad de la sala";
                 case  "mitad del pasillo 1º planta":
-                    return "estoy en la puerta";
+                    return "estoy en la puerta de la calle";
             }
         }
             return "";

@@ -80,7 +80,9 @@ public class FuncionesRJ {
                  case "en la puerta":
                      
                      return "escaleras abajo";
+                 case "en la puerta de la clase":
                      
+                     return "Hemos llegado a la puerta del gallinero";
              }
              }else{
                     
