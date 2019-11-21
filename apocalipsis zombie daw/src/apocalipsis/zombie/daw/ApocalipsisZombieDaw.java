@@ -213,7 +213,7 @@ public class ApocalipsisZombieDaw {
                         + "El empujón por fuera y por dentro se anulan, y la puerta no se abre.\n Rick nota ruido abajo. \n---------------\n";
                        historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.descripcionReaccion(turno,"abrimos la puerta y preguntamos qué pasa"); //El hombre que estaba fuera intenta empujaros y os grita "¡Déjame entrar!¡Déjame entrar!"
                        historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"primera planta"); //si distancia es menor que 3, estoy a la altura de secretaria, si es más, estoy en la puerta
-                       historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "mitad del aula"); //Igual que funcionesRJ
+                       historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "mitad de clase"); //Igual que funcionesRJ
                        historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
                       historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
                       
