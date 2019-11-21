@@ -59,6 +59,7 @@ public class FuncionesNA {
                     return "estoy en la puerta";
                 case "mitad del pasillo 1º planta":
                     return "estoy fuera del centro";
+              
             }
         }else{
             switch(mensaje){
