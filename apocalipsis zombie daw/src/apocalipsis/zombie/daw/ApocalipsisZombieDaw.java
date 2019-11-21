@@ -199,10 +199,10 @@ public class ApocalipsisZombieDaw {
                 historia+=((recibeNotificación(FuncionesRJ.percepcion)?FuncionesRJ.nombre+" nota que le vibra el teléfono ":""))+"\n";
                 
                 historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"ayudar")+"\n";
-                historia+=FuncionesJD.dondeLlego (FuncionesNA.desplazamiento(FuncionesJD.velocidad),"mitad del aula")+"\n";
+                historia+=FuncionesJD.nombre+": "+FuncionesJD.dondeLlego (FuncionesNA.desplazamiento(FuncionesJD.velocidad),"mitad del aula")+"\n";
                 historia+=FuncionesNS.nombre+": "+FuncionesNS.dondeLlego (FuncionesNA.desplazamiento(FuncionesNS.velocidad),"ventana")+" y veis el mensaje";
                 historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"mitad del pasillo 1º planta");
-                historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"principio de la escalera")+" y veis el mensaje";
+                historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"Estás en medio de las escaleras")+" y veis el mensaje";
                 historia+="\n"+FuncionesPI.nombre+": "+FuncionesJD.combate(FuncionesPI.nombre,FuncionesRJ.nombre,FuncionesPI.fuerza,FuncionesRJ.fuerza,FuncionesPI.velocidad,FuncionesRJ.velocidad);
                 FuncionesPI.vida-=50;
                historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego (FuncionesNA.desplazamiento(FuncionesJD.velocidad),"mitad del aula")+"\n";
