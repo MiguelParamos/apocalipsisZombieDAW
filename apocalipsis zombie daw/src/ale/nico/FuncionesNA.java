@@ -78,5 +78,15 @@ public class FuncionesNA {
             return "";
         
     }
+    
+        public static String descripcionReaccion (byte turno, String accion){
+     
+        if (turno==6 && accion.equals("abrimos la puerta y preguntamos qué pasa")){
+           return ("El hombre que estaba fuera intenta empujaros y os grita \"¡Déjame entrar!¡Déjame entrar!\"");
+            
+            }            
+        
+        return ("");
+        }
 }
 
