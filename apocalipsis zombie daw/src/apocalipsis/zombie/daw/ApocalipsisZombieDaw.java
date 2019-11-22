@@ -215,7 +215,7 @@ public class ApocalipsisZombieDaw {
                        historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"primera planta"); //si distancia es menor que 3, estoy a la altura de secretaria, si es más, estoy en la puerta
                        historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "mitad del aula"); //Igual que funcionesRJ
                        historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
-                      historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
+                       historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
                       
                 
                 System.out.println(historia);
