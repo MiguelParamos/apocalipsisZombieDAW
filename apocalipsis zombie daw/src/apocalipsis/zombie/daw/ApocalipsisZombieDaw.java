@@ -217,10 +217,17 @@ public class ApocalipsisZombieDaw {
                        historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad),"en la puerta hacia el gallinero"); //que imprima "llegáis a la puerta del gallinero"
                       historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
                       
+                      
                    turno++;
                 historia+="\n\n--------------Turno 7--------------\n";
                 historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.descripcionReaccion(turno,"no dejar pasar y preguntar qué pasa"); //Responde: El hombre intenta explicaros algo nervioso, y veis como lo que parece un zombie le muerde el cuello y lo tira al suelo 
-                
+                historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.descripcionReaccion(turno,"intento abrir el gallinero con las llaves de Natalia"); //Responde: Ninguna de las llaves abre el gallinero
+                historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "puerta del aula"); //Igual que funcionesRJ
+                historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"tablon de anuncios"); //Si recorres menos de 3 metros de distancia llegas a mitad de la escalera, si recorres más, llegas a la planta baja 
+                historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"mitad escalera"); //Si recorres menos de 3: Bajas abajo y ves a puigdemont con más gente. Si recorres más de 3, llegas a la altura de secretaría y ves a puigdemont y un zombie al otro lado de la puerta.
+                historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"miro el mensaje"); //Responde: veo el mensaje
+                       
+                            
                     
                       
                 
