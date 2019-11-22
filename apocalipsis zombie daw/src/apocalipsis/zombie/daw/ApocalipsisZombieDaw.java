@@ -199,7 +199,7 @@ public class ApocalipsisZombieDaw {
                 historia+=((recibeNotificación(FuncionesRJ.percepcion)?FuncionesRJ.nombre+" nota que le vibra el teléfono ":""))+"\n";
                 
                 historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"ayudar")+"\n";
-                historia+=FuncionesJD.nombre+": "+FuncionesJD.dondeLlego (FuncionesNA.desplazamiento(FuncionesJD.velocidad),"mitad del aula")+"\n";
+                historia+=FuncionesJD.dondeLlego (FuncionesNA.desplazamiento(FuncionesJD.velocidad),"mitad del aula")+"\n";
                 historia+=FuncionesNS.nombre+": "+FuncionesNS.dondeLlego (FuncionesNA.desplazamiento(FuncionesNS.velocidad),"ventana")+" y veis el mensaje";
                 historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.dondeLlego(FuncionesNA.desplazamiento(FuncionesNA.velocidad),"mitad del pasillo 1º planta");
                 historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"Estás en medio de las escaleras")+" y veis el mensaje";
@@ -213,9 +213,15 @@ public class ApocalipsisZombieDaw {
                         + "El empujón por fuera y por dentro se anulan, y la puerta no se abre.\n Rick nota ruido abajo. \n---------------\n";
                        historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.descripcionReaccion(turno,"abrimos la puerta y preguntamos qué pasa"); //El hombre que estaba fuera intenta empujaros y os grita "¡Déjame entrar!¡Déjame entrar!"
                        historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"primera planta"); //si distancia es menor que 3, estoy a la altura de secretaria, si es más, estoy en la puerta
-                       historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "mitad del aula"); //Igual que funcionesRJ
-                       historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
-                       historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
+                       historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "mitad de clase"); //Igual que funcionesRJ
+                       historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad),"en la puerta hacia el gallinero"); //que imprima "llegáis a la puerta del gallinero"
+                      historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
+                      
+                   turno++;
+                historia+="\n\n--------------Turno 7--------------\n";
+                historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.descripcionReaccion(turno,"no dejar pasar y preguntar qué pasa"); //Responde: El hombre intenta explicaros algo nervioso, y veis como lo que parece un zombie le muerde el cuello y lo tira al suelo 
+                
+                    
                       
                 
                 System.out.println(historia);

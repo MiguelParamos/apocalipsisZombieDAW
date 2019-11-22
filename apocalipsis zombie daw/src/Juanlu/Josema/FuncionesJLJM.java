@@ -81,6 +81,7 @@ public class FuncionesJLJM {
                 case "Estás en la primera planta":
                     
                     return"Estás en la puerta de la calle";
+               
             }
         } else {
             switch (mensaje) {

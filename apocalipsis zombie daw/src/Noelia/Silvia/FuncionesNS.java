@@ -83,7 +83,7 @@ public class FuncionesNS {
        
     public static String dondeLlego (int distancia,String mensaje){
             
-        if (distancia>=3&&mensaje.equals("ventana")) 
+        if (distancia>=3) 
            {
             switch (mensaje) //Devolver el mensaje dependiendo de la posición introducidan si la distancia>=3metros 
               {
@@ -93,7 +93,7 @@ public class FuncionesNS {
                 case "mitad de clase":
                     return "En la puerta";
     
-                case "Puerta":
+                case "en la puerta":
                     return "En las escaleras";
                     
                 case "tablón":
@@ -113,21 +113,23 @@ public class FuncionesNS {
                     case "tablón":
                         return "En mitad de las escaleras";
 
-                    case "puerta":
+                    case "en la puerta":
                         return "En mitad de las escaleras";  
                     }
                 }
              return "";
-                         
-             
+    }
     
-        }
+} 
+    
+    
+ 
 //     Quinto turno, si se mira el móvil, se ve emergencia, ataque en málaga, por favor acuda A PIE a uno de los refugios preparados, 
 //     tiene mapa de los puntos mas cercano en: http://emergencias.gov.es. Cuando entráis, el enlace está roto.
         
    
     
-    }
+    
 
 
 
