@@ -205,7 +205,7 @@ public class ApocalipsisZombieDaw {
                 historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"Estás en medio de las escaleras")+" y veis el mensaje";
                 historia+="\n"+FuncionesPI.nombre+": "+FuncionesJD.combate(FuncionesPI.nombre,FuncionesRJ.nombre,FuncionesPI.fuerza,FuncionesRJ.fuerza,FuncionesPI.velocidad,FuncionesRJ.velocidad);
                 FuncionesPI.vida-=50;
-               historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego (FuncionesNA.desplazamiento(FuncionesJD.velocidad),"mitad del aula")+"\n";
+                historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego (FuncionesNA.desplazamiento(FuncionesJD.velocidad),"mitad del aula")+"\n";
             
                 turno++;
                 historia+="\n\n--------------Turno 6--------------\n";
