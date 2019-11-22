@@ -85,7 +85,12 @@ public class FuncionesNA {
         if (turno==6 && accion.equals("abrimos la puerta y preguntamos qué pasa")){
            return ("El hombre que estaba fuera intenta empujaros y os grita \"¡Déjame entrar!¡Déjame entrar!\"");
             
-            }            
+            }else{
+            
+                    
+            if (turno==7 &&accion.equals("no dejar pasar y preguntar qué pasa")) 
+                return ("Responde: El hombre intenta explicaros algo nervioso, y veis como lo que parece un zombie le muerde el cuello y lo tira al suelo");
+            }
         
         return ("");
         }

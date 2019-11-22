@@ -99,7 +99,7 @@ public class FuncionesJLJM {
                         
                      return "Estás en la primera planta";
                      
-                case "Estas en la primera planta":
+                case "primera planta":
                     
                     return "Estás en secretaría";
                         
