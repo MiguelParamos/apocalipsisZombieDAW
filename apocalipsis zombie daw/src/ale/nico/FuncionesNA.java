@@ -59,6 +59,7 @@ public class FuncionesNA {
                     return "estoy en la puerta";
                 case "mitad del pasillo 1º planta":
                     return "estoy fuera del centro";
+              
             }
         }else{
             switch(mensaje){
@@ -72,11 +73,21 @@ public class FuncionesNA {
                 case "en mitad de la escalera":  
                     return "estoy en mitad de la sala";
                 case  "mitad del pasillo 1º planta":
-                    return "estoy en la puerta";
+                    return "estoy en la puerta de la calle";
             }
         }
             return "";
         
     }
+    
+        public static String descripcionReaccion (byte turno, String accion){
+     
+        if (turno==6 && accion.equals("abrimos la puerta y preguntamos qué pasa")){
+           return ("El hombre que estaba fuera intenta empujaros y os grita \"¡Déjame entrar!¡Déjame entrar!\"");
+            
+            }            
+        
+        return ("");
+        }
 }
 

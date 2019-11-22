@@ -73,7 +73,7 @@ public class FuncionesRJ {
                      
                      return"mitad aula";
                      
-                 case "mitad aula":
+                 case "mitad del aula":
                      
                      return"estas en la puerta";
                      
@@ -81,6 +81,9 @@ public class FuncionesRJ {
                      
                      return "escaleras abajo";
                      
+                 case "puerta del aula":
+                     
+                     return "llegáis a la puerta del gallinero";
              }
              }else{
                     
@@ -90,7 +93,7 @@ public class FuncionesRJ {
                      
                      return"por la fila 3";
                      
-                 case "mitad aula":
+                 case "mitad del aula":
                      
                      return"por la ultima fila";
                      

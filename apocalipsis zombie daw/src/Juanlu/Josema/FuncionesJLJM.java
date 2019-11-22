@@ -78,7 +78,9 @@ public class FuncionesJLJM {
                     return "Estás en la puerta";
                 case "Estás en la puerta":
                     return "Has bajado las escaleras, estás en la 1ª planta";
-
+                case "Estás en la primera planta":
+                    
+                    return"Estás en la puerta de la calle";
             }
         } else {
             switch (mensaje) {
@@ -96,7 +98,9 @@ public class FuncionesJLJM {
                         
                      return "Estás en la primera planta";
                      
-                     
+                case "Estas en la primera planta":
+                    
+                    return "Estás en secretaría";
                         
             }
         }
