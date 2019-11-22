@@ -84,6 +84,10 @@ public class FuncionesRJ {
                  case "puerta del aula":
                      
                      return "llegáis a la puerta del gallinero";
+                     
+                 case "tablon de anuncios":
+                     
+                     return "Llego a la planta baja";
              }
              }else{
                     
@@ -105,6 +109,10 @@ public class FuncionesRJ {
                 case "puerta del aula":
                      
                      return "Llego hasta el tablon de anuncios.";
+                    
+                case "tablon de anuncios":
+                     
+                     return "Llego a mitad de la escalera";
                      
              }
              }
