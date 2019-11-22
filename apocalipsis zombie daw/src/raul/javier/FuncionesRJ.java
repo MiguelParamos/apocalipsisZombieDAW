@@ -102,6 +102,10 @@ public class FuncionesRJ {
                      
                      return "en mitad de las escaleras";
                      
+                case "puerta del aula":
+                     
+                     return "Llego hasta el tablon de anuncios.";
+                     
              }
              }
                 
