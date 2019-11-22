@@ -217,6 +217,12 @@ public class ApocalipsisZombieDaw {
                        historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
                       historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"puerta del aula"); //que imprima "llegáis a la puerta del gallinero"
                       
+                   turno++;
+                historia+="\n\n--------------Turno 7--------------\n";
+                historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.descripcionReaccion(turno,"no dejar pasar y preguntar qué pasa"); //Responde: El hombre intenta explicaros algo nervioso, y veis como lo que parece un zombie le muerde el cuello y lo tira al suelo 
+                
+                    
+                      
                 
                 System.out.println(historia);
                 
