@@ -93,7 +93,7 @@ public class FuncionesNS {
                 case "mitad de clase":
                     return "En la puerta";
     
-                case "Puerta":
+                case "en la puerta":
                     return "En las escaleras";
                     
                 case "tablón":
@@ -113,7 +113,7 @@ public class FuncionesNS {
                     case "tablón":
                         return "En mitad de las escaleras";
 
-                    case "puerta":
+                    case "en la puerta":
                         return "En mitad de las escaleras";  
                     }
                 }
