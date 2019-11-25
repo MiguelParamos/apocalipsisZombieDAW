@@ -71,7 +71,7 @@ public class FuncionesNS {
               
        if (turno==8&&accion.equals("cojo extintor"))
             {
-           return "Nos percatamos de que hay follón y cogemos el extintor como arma";
+           return "Nos percatamos de que hay follón, vamos abajo y cogemos el extintor como arma";
             }
         
        return "";
