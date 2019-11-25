@@ -237,7 +237,7 @@ public class ApocalipsisZombieDaw {
                  historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.descripcionReaccion(turno,"cojo extintor"); //Respuesta: Llego abajo y cojo el extintor que hay colgando en la escalera
                  historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.descripcionReaccion(turno,"enrolla sudadera y se pega a la espalda de briony"); //Responder: enrolla sudadera y se pega a la espalda de briony y llegan abajo con ella
                  historia+="\n"+FuncionesJLJM.nombre+": Cargas contra el zombie de la puerta: "+FuncionesJD.combate(FuncionesJLJM.nombre,"Fernando el Zombie",FuncionesJLJM.fuerza, (byte)14,FuncionesJLJM.velocidad, (byte)85);
-                 historia+="\n"+FuncionesA.nombre+": "+FuncionesA.dondeLlego(FuncionesNA.desplazamiento(FuncionesA.velocidad),"puerta del aula"); //Si la distancia es menos de 3, llegas a mitad de la escalera. Si es mas llegas abajo
+                 //historia+="\n"+FuncionesA.nombre+": "+FuncionesA.dondeLlego(FuncionesNA.desplazamiento(FuncionesA.velocidad),"puerta del aula"); //Si la distancia es menos de 3, llegas a mitad de la escalera. Si es mas llegas abajo
                  FuncionesJLJM.vida-=26;     
                 
                  
