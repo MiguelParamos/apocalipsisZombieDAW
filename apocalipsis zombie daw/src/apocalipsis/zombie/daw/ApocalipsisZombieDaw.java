@@ -222,15 +222,25 @@ public class ApocalipsisZombieDaw {
                 historia+="\n\n--------------Turno 7--------------\n";
                 historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.descripcionReaccion(turno,"no dejar pasar y preguntar qué pasa"); //Responde: El hombre intenta explicaros algo nervioso, y veis como lo que parece un zombie le muerde el cuello y lo tira al suelo 
                 historia+="\n"+FuncionesJD.nombre+": "+FuncionesJD.descripcionReaccion(turno,"intento abrir el gallinero con las llaves de Natalia"); //Responde: Ninguna de las llaves abre el gallinero
-                historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "puerta del aula"); //Igual que funcionesRJ
-                historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"tablon de anuncios"); //Si recorres menos de 3 metros de distancia llegas a mitad de la escalera, si recorres más, llegas a la planta baja 
-                historia+="\n"+FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"mitad escalera"); //Si recorres menos de 3: Bajas abajo y ves a puigdemont con más gente. Si recorres más de 3, llegas a la altura de secretaría y ves a puigdemont y un zombie al otro lado de la puerta.
+                historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "en la puerta")+" Se percata de que hay follón fuera"; //Igual que funcionesRJ
+                historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"tablon de anuncios")+" Se percata de que hay follón fuera"; //Si recorres menos de 3 metros de distancia llegas a mitad de la escalera, si recorres más, llegas a la planta baja 
+                historia+="\n"+FuncionesJLJM.nombre+": No hiciste la función. Te tropiezas y pierdes 5 de vida. Pero ves a Puigdemont luchando con un zombie en la puerta.";
+                FuncionesJLJM.vida-=5;
                 historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"miro el mensaje"); //Responde: veo el mensaje
                        
-                            
-                    
-                      
+                  turno++;
+                historia+="\n\n--------------Turno 8--------------\n"
+                        + "Jhonny minMax de despierta de un ataque narcoleptico, y oye ruido abajo";
+                //ZOMBIE DE LA PUERTA: VELOCIDAD: 85, FUERZA 14
+                 historia+="\n"+FuncionesNA.nombre+": "+FuncionesNA.descripcionReaccion(turno,"intento huir hacia la calle"); //Respuesta: Conforme escapabas, el zombie te agarra de una pierna. Rick carga contra el, y os libera.
+                 historia+="\n"+FuncionesJD.nombre+": "+ FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad), "puerta del gallinero"); //Si se recorre más de 3 metros llegáis a mitad de la escalera. Si se recorre menos, al principio de las escaleras
+                 historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.descripcionReaccion(turno,"cojo extintor"); //Respuesta: Llego abajo y cojo el extintor que hay colgando en la escalera
+                 historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.descripcionReaccion(turno,"enrolla sudadera y se pega a la espalda de briony"); //Responder: enrolla sudadera y se pega a la espalda de briony y llegan abajo con ella
+                 historia+="\n"+FuncionesJLJM.nombre+": Cargas contra el zombie de la puerta: "+FuncionesJD.combate(FuncionesJLJM.nombre,"Fernando el Zombie",FuncionesJLJM.fuerza, (byte)14,FuncionesJLJM.velocidad, (byte)85);
+                 historia+="\n"+FuncionesA.nombre+": "+FuncionesA.dondeLlego(FuncionesNA.desplazamiento(FuncionesA.velocidad),"puerta del aula"); //Si la distancia es menos de 3, llegas a mitad de la escalera. Si es mas llegas abajo
+                 FuncionesJLJM.vida-=26;     
                 
+                 
                 System.out.println(historia);
                 
     }
