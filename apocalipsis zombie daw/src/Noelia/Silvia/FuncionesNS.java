@@ -68,7 +68,11 @@ public class FuncionesNS {
             {
            return "Cogemos nuestros abrigos, hacemos un nudo con ellos para saltar por la ventana";
             }  
-         
+              
+       if (turno==8&&accion.equals("cojo extintor"))
+            {
+           return "Nos percatamos de que hay follón, vamos abajo y cogemos el extintor como arma";
+            }
         
        return "";
                     
