@@ -34,13 +34,16 @@ public class FuncionesJD {
             }else{
                 if (turno== 4 && accion.equals("coger llaves de natalia junto a cabezanuca")){
                     return FuncionesJD.nombre+" ha cogido las llaves junto a Cabezanuca.";
+                }else{
+                if (turno== 7 && accion.equals("intento abrir el gallinero con las llaves de Natalia")){
+                    return FuncionesJD.nombre+" La llave no abre la puerta.";
                 }
 
             }
             return "";
         }
     }
-
+}
     public static String combate(String nombre1,String nombre2,byte fuerza1,byte fuerza2,byte velocidad1 ,byte velocidad2) {
         if (velocidad1 > velocidad2) {
             return nombre1 + " golpea a "+nombre2+" y pierde "+Math.abs(fuerza2 - fuerza1)+" de vida";
