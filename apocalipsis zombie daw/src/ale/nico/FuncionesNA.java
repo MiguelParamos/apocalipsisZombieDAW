@@ -99,7 +99,7 @@ public class FuncionesNA {
             }else if (turno==7 &&accion.equals("no dejar pasar y preguntar qué pasa")) {
                 return ("Responde: El hombre intenta explicaros algo nervioso, y veis como lo que parece un zombie le muerde el cuello y lo tira al suelo");
                 
-            }else if(turno==8 && velocidad>55 && accion.equals("intento huir hacia la calle")){
+            }else if(turno==8 && velocidad<85 && accion.equals("intento huir hacia la calle")){
                     return ("Conforme escapabas, el zombie te agarra de una pierna. Rick carga contra el, y os libera.");
                     }
         
