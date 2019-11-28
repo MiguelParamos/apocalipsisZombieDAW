@@ -75,27 +75,12 @@ public class FuncionesPI {
     public static String dondeLlego (int distancia,String mensaje){
         
         if(distancia>=3){
-            switch(mensaje){
-                case "ventana": return "Estoy en mitad del aula";
-                     
-                case "mitad del aula": return "Estoy en la puerta";
-                
-                case "en la puerta": return "He bajado las escaleras, estoy en la 1ª planta";
-                    
-                case "en el tablon": return "He bajado las escaleras, estoy en la 1ª planta"; 
-            }
+          return "Estoy en la puerta con todos";
         }else{
-            switch(mensaje){
-                case "ventana": return "Voy por la fila 3";
-                     
-                case "mitad del aula": return "Voy por la ultima fila";
-                
-                case "en la puerta": return "Voy por mitad de las escaleras";
-                    
-                case "en el tablon": return "Voy por mitad de las escaleras"; 
+            return "Estoy en secretaria"; 
             }
-        }
-        return "";
+        
+        
     }
     
 }

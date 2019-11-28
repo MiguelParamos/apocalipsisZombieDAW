@@ -65,7 +65,9 @@ public static String dondeLlego (int distancia,String mensaje){
                     
                 case "en el tablon": return "He bajado las escaleras, estoy en la 1ª planta"; 
                 
-                case "en la puerta hacia el gallinero": return "Estoy en la puerta del gallinero"; 
+                case "en la puerta hacia el gallinero": return "Estoy en la puerta del gallinero";
+                
+                case "puerta del gallinero": return "Estoy en mitad de las escaleras";
             }
         }else{
             switch(mensaje){
@@ -78,6 +80,8 @@ public static String dondeLlego (int distancia,String mensaje){
                 case "en el tablon": return "Voy por mitad de las escaleras"; 
                     
                 case "en la puerta hacia el gallinero": return "Estoy en la puerta hacia el gallinero"; 
+                
+                case "puerta del gallinero": return "Estoy en el principio de las escaleras";
             }
         }
         return "";
