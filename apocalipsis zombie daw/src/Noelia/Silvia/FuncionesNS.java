@@ -21,7 +21,7 @@ public class FuncionesNS {
     public static byte intuicion; //Intuición del personaje entre 0 y 100 50
     public static byte percepcion; //Percepción del personaje entre 0 y 100 50
     public static byte vida; // Vida del personaje entre 0 y 100
-
+    public static boolean punteria;// punterIa del personaje al lanzar entre 0 y 100
     
     /**
      * comprobar que los parámetros suma 200
@@ -130,9 +130,22 @@ public class FuncionesNS {
              return "";
     }
     
-} 
+
     
-    
+    public static boolean lanzar(){
+    float pl= (fuerza*20)/100;  
+    float po=0f;
+   float dif=pl-po;    
+
+    if (dif<5){
+                if (punteria<50){
+                                    return false;
+                                }          
+                                
+                }return true ;
+
+    }
+}
  
 //     Quinto turno, si se mira el móvil, se ve emergencia, ataque en málaga, por favor acuda A PIE a uno de los refugios preparados, 
 //     tiene mapa de los puntos mas cercano en: http://emergencias.gov.es. Cuando entráis, el enlace está roto.

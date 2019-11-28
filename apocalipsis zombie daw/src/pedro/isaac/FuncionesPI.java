@@ -21,6 +21,7 @@ public class FuncionesPI {
     public static byte intuicion; //Intuición del personaje entre 0 y 100
     public static byte percepcion; //Percepción del personaje entre 0 y 100
     public static byte vida; //La vida de personaje entre 0 y 100
+    public static byte punteria;//La punteria entre 0 100, es random
     
     static public boolean comprobar(byte velocidad, byte fuerza, byte intuicion, byte percepcion) {
         if (velocidad + fuerza + intuicion + percepcion == 200) {
@@ -74,27 +75,12 @@ public class FuncionesPI {
     public static String dondeLlego (int distancia,String mensaje){
         
         if(distancia>=3){
-            switch(mensaje){
-                case "ventana": return "Estoy en mitad del aula";
-                     
-                case "mitad del aula": return "Estoy en la puerta";
-                
-                case "en la puerta": return "He bajado las escaleras, estoy en la 1ª planta";
-                    
-                case "en el tablon": return "He bajado las escaleras, estoy en la 1ª planta"; 
-            }
+          return "Estoy en la puerta con todos";
         }else{
-            switch(mensaje){
-                case "ventana": return "Voy por la fila 3";
-                     
-                case "mitad del aula": return "Voy por la ultima fila";
-                
-                case "en la puerta": return "Voy por mitad de las escaleras";
-                    
-                case "en el tablon": return "Voy por mitad de las escaleras"; 
+            return "Estoy en secretaria"; 
             }
-        }
-        return "";
+        
+        
     }
     
 }
