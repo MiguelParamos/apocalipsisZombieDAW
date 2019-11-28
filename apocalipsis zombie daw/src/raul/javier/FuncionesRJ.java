@@ -92,6 +92,10 @@ public class FuncionesRJ {
                  case "tablon de anuncios":
                      
                      return "Llego a la planta baja";
+                     
+                 case "primera planta junto a las escaleras":
+                     
+                     return"Llego a la puerta con todo el mundo";
              }
              }else{
                     
@@ -117,6 +121,10 @@ public class FuncionesRJ {
                 case "tablon de anuncios":
                      
                      return "Llego a mitad de la escalera";
+                
+                case "primera planta junto a las escaleras":
+                     
+                     return"Llego a secretaría";
                      
              }
              }
@@ -125,16 +133,25 @@ public class FuncionesRJ {
          
      }
      
-     //public static boolean lanzar(byte fuerza,byte peso){
-         
-         //byte peso;
-         
-         //return false;
+     public static boolean lanzar(byte fuerza,float peso,byte punteria){
+          
+        float pesoL=(fuerza*20)/100;
+        
+        float dif=pesoL-peso;
+        
+        if(dif<0){
+            
+            return false;
+            
+        }
+        return (dif<5?punteria>=50:punteria>=20);
+        
+     }
          
          
     
     
-//}
+
      
      
      
