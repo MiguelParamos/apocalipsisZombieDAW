@@ -237,8 +237,26 @@ public class ApocalipsisZombieDaw {
                  historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.descripcionReaccion(turno,"cojo extintor"); //Respuesta: Llego abajo y cojo el extintor que hay colgando en la escalera
                  historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.descripcionReaccion(turno,"enrolla sudadera y se pega a la espalda de briony"); //Responder: enrolla sudadera y se pega a la espalda de briony y llegan abajo con ella
                  historia+="\n"+FuncionesJLJM.nombre+": Cargas contra el zombie de la puerta: "+FuncionesJD.combate(FuncionesJLJM.nombre,"Fernando el Zombie",FuncionesJLJM.fuerza, (byte)14,FuncionesJLJM.velocidad, (byte)85);
-                 //historia+="\n"+FuncionesA.nombre+": "+FuncionesA.dondeLlego(FuncionesNA.desplazamiento(FuncionesA.velocidad),"puerta del aula"); //Si la distancia es menos de 3, llegas a mitad de la escalera. Si es mas llegas abajo
+                 historia+="\n"+FuncionesA.nombre+": "+FuncionesA.descripcionReaccion(turno,"miro el mensaje"); //Si la distancia es menos de 3, llegas a mitad de la escalera. Si es mas llegas abajo
                  FuncionesJLJM.vida-=26;     
+                 
+                   turno++;
+                historia+="\n\n--------------Turno 9--------------\n Bryony y Cabezanuca ve a Rick Y Puigdemont luchar contra alguien en la puerta.\n Foyonero se levanta aturdido después del guantazo que le dió CabezaNuca. Te encuentras solo en el aula.\nSam oye mucho ruido abajo, no le da buena espina.";
+                //+5 de fuerza por el boli
+                historia+="\n"+FuncionesNA.nombre+": Intenta apuñalar al zombie con un boli: "+FuncionesJD.combate(FuncionesNA.nombre,"Fernando el Zombie",(byte)(FuncionesNA.fuerza+5), (byte)14,FuncionesNA.velocidad, (byte)85);
+                 FuncionesNA.vida-=21;
+                 historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "primera planta junto a las escaleras"); //Si recorres menos de 3 metros llegas a secretaría, y si recorres más, llegas a la puerta con todo el mundo
+                 //+20 de fuerza por la silla
+                 historia+="\n"+FuncionesJLJM.nombre+": Coge la silla de al lado de la puerta, y se la tira al zombie: "+FuncionesJD.combate(FuncionesJLJM.nombre,"Fernando el Zombie",(byte)(FuncionesJLJM.fuerza+20), (byte)14,FuncionesJLJM.velocidad, (byte)85)+" Se te avalanza el zombie encima.";
+                 FuncionesJLJM.vida-=46;
+                 historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"primera planta junto a las escaleras"); //Igual que Noelia y Silvia
+                 historia+="\n"+FuncionesPI.nombre+": "+ FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesPI.velocidad), "mitad del aula"); //Si se recorre menos de 3 metros al final del aula, si se recorren más, a mitad de las escaleras
+                 historia+="\n"+FuncionesJD.nombre+": "+ FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad), "mitad de las escaleras"); //Si se recorre más de 3 metros llegáis a secretaría, si se recorre menos, al principio de escaleras en primera planta
+                 historia+="\n"+FuncionesA.nombre+": "+FuncionesA.dondeLlego(FuncionesNA.desplazamiento(FuncionesA.velocidad),"puerta del aula"); //Si la distancia es menos de 3, llegas a mitad de la escalera. Si es mas llegas abajo
+                 
+                
+                 
+                 
                 
                  
                 System.out.println(historia);

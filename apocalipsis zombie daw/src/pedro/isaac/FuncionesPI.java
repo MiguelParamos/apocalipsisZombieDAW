@@ -21,6 +21,7 @@ public class FuncionesPI {
     public static byte intuicion; //Intuición del personaje entre 0 y 100
     public static byte percepcion; //Percepción del personaje entre 0 y 100
     public static byte vida; //La vida de personaje entre 0 y 100
+    public static byte punteria;//La punteria entre 0 100, es random
     
     static public boolean comprobar(byte velocidad, byte fuerza, byte intuicion, byte percepcion) {
         if (velocidad + fuerza + intuicion + percepcion == 200) {
