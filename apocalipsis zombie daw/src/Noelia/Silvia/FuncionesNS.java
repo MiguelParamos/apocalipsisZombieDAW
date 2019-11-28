@@ -21,7 +21,7 @@ public class FuncionesNS {
     public static byte intuicion; //Intuición del personaje entre 0 y 100 50
     public static byte percepcion; //Percepción del personaje entre 0 y 100 50
     public static byte vida; // Vida del personaje entre 0 y 100
-    public static boolean punteria;// punterIa del personaje al lanzar entre 0 y 100
+    public static byte punteria;// punteria del personaje al lanzar entre 0 y 100
     
     /**
      * comprobar que los parámetros suma 200
@@ -135,7 +135,7 @@ public class FuncionesNS {
     public static boolean lanzar(){
     float pl= (fuerza*20)/100;  
     float po=0f;
-   float dif=pl-po;    
+    float dif=pl-po;    
 
     if (dif<5){
                 if (punteria<50){
