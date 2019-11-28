@@ -102,6 +102,9 @@ public class FuncionesNS {
                     
                 case "tablón":
                     return "En las escaleras";
+               
+                case "primera planta junto a las escaleras":
+                    return "En la puerta junto con todo el mundo";  
               }   
 
             }else //Devolver el mensaje dependiendo de la posición introducidan si la distancia<3 metros
@@ -119,6 +122,9 @@ public class FuncionesNS {
 
                     case "en la puerta":
                         return "En mitad de las escaleras";  
+                        
+                    case "primera planta junto a las escaleras":
+                        return "En secretaría";  
                     }
                 }
              return "";
