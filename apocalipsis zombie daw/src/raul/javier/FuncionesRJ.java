@@ -48,6 +48,10 @@ public class FuncionesRJ {
                 
                 return "Cojo las llaves de Natalia";
             
+             }if(turno==8&&accion.equals("enrolla sudadera y se pega a la espalda de briony")){
+                 
+                 return "enrolla sudadera y se pega a la espalda de briony y llegan abajo con ella";
+                 
              }
             
         }   
