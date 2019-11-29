@@ -132,19 +132,21 @@ public class FuncionesNS {
     
 
     
-    public static boolean lanzar(){
-    float pl= (fuerza*20)/100;  
-    float po=0f;
+    public static boolean lanzar(float po){
+    float pl= fuerza*0.20f;  
     float dif=pl-po;    
 
     if (dif<5){
                 if (punteria<50){
                                     return false;
-                                }          
-                                
-                }return true ;
-
-    }
+                 }else{
+                    if (punteria<20) {
+                    return false;
+                        }else{
+                            return true;
+                             }
+                
+            }
 }
  
 //     Quinto turno, si se mira el móvil, se ve emergencia, ataque en málaga, por favor acuda A PIE a uno de los refugios preparados, 
