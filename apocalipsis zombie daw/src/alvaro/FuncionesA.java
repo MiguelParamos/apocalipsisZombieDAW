@@ -17,6 +17,8 @@ public class FuncionesA {
     public static byte fuerza;// fuerza del personaje entre 0 y 100 (10)
     public static byte intuicion; //intuicion del personaje entre 0 y 100 (55)
     public static byte percepcion;//intuicion del personaje entre 0 y 100 (60)
+    public static byte salud;//salud del personaje entre 0 y 100, si llega a 0 mueres
+    public static byte punteria;//Punteria del pèrsonaje entre 0 y 100 (24)
     
     /**
      *  Comprueba que la suma de sus estadisticas sume 200
@@ -50,6 +52,16 @@ public class FuncionesA {
             }
         return "";
     }
+    
+    public static String combate(String nombre1,String nombre2,byte fuerza1,byte fuerza2,byte velocidad1 ,byte velocidad2) {
+        if (velocidad1 > velocidad2) {
+            return nombre1 + " golpea a "+nombre2+" y pierde "+Math.abs(fuerza2 - fuerza1)+" de vida";
+        } else {
+            System.out.println(nombre2+" golpea a" + nombre1);
+            return nombre2 + " golpea a "+nombre1+" y pierde "+Math.abs(fuerza2 - fuerza1)+" de vida";
+        }
+    }
+    
     
     public static String dondeLlego (int distancia,String mensaje){
         
