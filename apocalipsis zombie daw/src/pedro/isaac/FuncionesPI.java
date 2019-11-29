@@ -82,5 +82,34 @@ public class FuncionesPI {
         
         
     }
+    /**
+     * Funcion lanzar que nos indica si podemos lanzar o no un objeto dependiendo de la fuerza, punteria y peso del objeto.
+     * @param fuerza nuestra fuerza
+     * @param punteria nuestra punteria
+     * @param peso del objeto
+     * @return devulve un booleano false si no lo puedes lanzar, true si lo lanzas
+     */
+    public static boolean lanzar(byte fuerza, byte punteria, float peso){
+        float pesoLanzable=(fuerza*20)/100;
+        if(pesoLanzable>peso){
+            return false;
+        }else{
+            float dif=pesoLanzable-peso;
+            if(dif<5){
+                if(punteria<50){
+                    return false;
+                }else{
+                    return true;
+                }
+                
+            }else{
+                if(punteria<20){
+                    return false;
+                }else return true;
+                
+            }
+        }
+        
+    }
     
 }
