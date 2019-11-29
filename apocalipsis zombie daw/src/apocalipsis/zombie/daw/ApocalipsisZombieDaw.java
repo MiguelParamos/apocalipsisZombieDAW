@@ -39,6 +39,7 @@ public class ApocalipsisZombieDaw {
             FuncionesJD.intuicion=60;
             FuncionesJD.percepcion=40;
             FuncionesJD.vida=100;
+            FuncionesJD.punteria=56;
                     
            FuncionesJLJM.nombre="Rick";
            FuncionesJLJM.velocidad=40;
@@ -46,6 +47,7 @@ public class ApocalipsisZombieDaw {
            FuncionesJLJM.percepción=60;
            FuncionesJLJM.intuición=60;
            FuncionesJLJM.vida=100;
+            FuncionesJLJM.punteria=91;
            
            FuncionesNS.nombre="Bryony";
            FuncionesNS.velocidad=70;
@@ -53,6 +55,7 @@ public class ApocalipsisZombieDaw {
            FuncionesNS.intuicion=50;
            FuncionesNS.percepcion=50;
            FuncionesNS.vida=100;
+           FuncionesNS.punteria=32;
            
            FuncionesNA.nombre="Puigdemont";
            FuncionesNA.velocidad=55;
@@ -60,12 +63,14 @@ public class ApocalipsisZombieDaw {
            FuncionesNA.percepcion=65;
            FuncionesNA.intuicion=50;
            FuncionesNA.vida=100;
+           FuncionesNA.punteria=17;
            
            FuncionesA.nombre="Jhonny Minmax";
            FuncionesA.velocidad=75;
            FuncionesA.fuerza=10;
            FuncionesA.intuicion=55;
            FuncionesA.percepcion=60;
+           //FuncionesA.punteria=8;
            
            FuncionesPI.nombre="Foyonero";
            FuncionesPI.velocidad=50;
@@ -73,6 +78,7 @@ public class ApocalipsisZombieDaw {
            FuncionesPI.intuicion=50;
            FuncionesPI.percepcion=0;
            FuncionesPI.vida=100;
+           FuncionesPI.punteria=63;
            
            FuncionesRJ.nombre="CabezaNuca";
            FuncionesRJ.vida=100;
@@ -80,6 +86,7 @@ public class ApocalipsisZombieDaw {
            FuncionesRJ.intuicion=50;
            FuncionesRJ.velocidad=50;
            FuncionesRJ.percepcion=50;
+           FuncionesRJ.punteria=53;
            
             //Aquí se cuenta todo lo que pasa
            String historia="Es 15 de Noviembre en Cenec, "+FuncionesJD.nombre+", "+FuncionesJLJM.nombre+",\n "+FuncionesNS.nombre+", " +FuncionesNA.nombre+", "+FuncionesPI.nombre+", "+FuncionesA.nombre+"\ny "+FuncionesRJ.nombre+" están en clase de programación.";
@@ -241,23 +248,36 @@ public class ApocalipsisZombieDaw {
                  FuncionesJLJM.vida-=26;     
                  
                    turno++;
-                historia+="\n\n--------------Turno 9--------------\n Bryony y Cabezanuca ve a Rick Y Puigdemont luchar contra alguien en la puerta.\n Foyonero se levanta aturdido después del guantazo que le dió CabezaNuca. Te encuentras solo en el aula.\nSam oye mucho ruido abajo, no le da buena espina.";
+                historia+="\n\n--------------Turno 9--------------\n Bryony y Cabezanuca ve a Rick Y Puigdemont luchar contra alguien en la puerta.\n Foyonero se levanta aturdido después del guantazo que le dió CabezaNuca. Te encuentras solo en el aula.\nSam oye mucho ruido abajo, no le da buena espina.\n-------------------\n";
                 //+5 de fuerza por el boli
-                historia+="\n"+FuncionesNA.nombre+": Intenta apuñalar al zombie con un boli: "+FuncionesJD.combate(FuncionesNA.nombre,"Fernando el Zombie",(byte)(FuncionesNA.fuerza+5), (byte)14,FuncionesNA.velocidad, (byte)85);
-                 FuncionesNA.vida-=21;
                  historia+="\n"+FuncionesNS.nombre+": "+FuncionesNS.dondeLlego(FuncionesNA.desplazamiento(FuncionesNS.velocidad), "primera planta junto a las escaleras"); //Si recorres menos de 3 metros llegas a secretaría, y si recorres más, llegas a la puerta con todo el mundo
                  //+20 de fuerza por la silla
-                 historia+="\n"+FuncionesJLJM.nombre+": Coge la silla de al lado de la puerta, y se la tira al zombie: "+FuncionesJD.combate(FuncionesJLJM.nombre,"Fernando el Zombie",(byte)(FuncionesJLJM.fuerza+20), (byte)14,FuncionesJLJM.velocidad, (byte)85)+" Se te avalanza el zombie encima.";
-                 FuncionesJLJM.vida-=46;
+                 historia+="\n"+FuncionesJLJM.nombre+" y "+FuncionesNA.nombre+": respectivamente cogen una silla de la entrada y se la tiran al zombie, y cogen un boli y lo intentan apuñalar: ";
+                 if(FuncionesJLJM.lanzar(FuncionesJLJM.fuerza,FuncionesJLJM.punteria,3.5f)){
+                     historia+=FuncionesJLJM.nombre+" le atiza al zombie con la silla\n";
+                     historia+=FuncionesJD.combate(FuncionesJLJM.nombre+" "+FuncionesNA.nombre, "Fernando el Zombie", (byte)(FuncionesJLJM.fuerza+20 /*por la silla*/+FuncionesNA.fuerza+5) /*por el boli*/, (byte)14,(FuncionesJLJM.velocidad>FuncionesNA.velocidad?FuncionesJLJM.velocidad:FuncionesNA.velocidad), (byte)(85/2) /*porque tiene que estar atento a 2 personas*/);
+                     //historia+="Fernando el zombie esquiva el golpe.\n";
+                 }else{
+                     historia+=FuncionesJLJM.nombre+" falla el tiro y le da a Puigdemont un sillazo\n";
+                 }
+                 
                  historia+="\n"+FuncionesRJ.nombre+": "+FuncionesRJ.dondeLlego(FuncionesNA.desplazamiento(FuncionesRJ.velocidad),"primera planta junto a las escaleras"); //Igual que Noelia y Silvia
                  historia+="\n"+FuncionesPI.nombre+": "+ FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesPI.velocidad), "mitad del aula"); //Si se recorre menos de 3 metros al final del aula, si se recorren más, a mitad de las escaleras
                  historia+="\n"+FuncionesJD.nombre+": "+ FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad), "mitad de las escaleras"); //Si se recorre más de 3 metros llegáis a secretaría, si se recorre menos, al principio de escaleras en primera planta
-                 historia+="\n"+FuncionesA.nombre+": "+FuncionesA.dondeLlego(FuncionesNA.desplazamiento(FuncionesA.velocidad),"puerta del aula"); //Si la distancia es menos de 3, llegas a mitad de la escalera. Si es mas llegas abajo
+                 historia+="\n"+FuncionesA.nombre+": Se pilla los dedos con la puerta del aula al salir y se hace daño. Curiosamente, el accidente le arregla los dedos. Pierde 10 de vida";
+                 FuncionesA.vida-=10;
                  
                 
-                 
-                 
-                
+                   turno++;
+                historia+="\n\n--------------Turno 10--------------\n";
+                historia+="Bryony , Sam y cabezaNuca ven a todo el mundo luchando\n";
+                historia+=FuncionesNA.nombre+": "+FuncionesNA.descripcionReaccion(turno,"le prendo fuego al zombie con el mechero y el desodorante")+"\n"; //Ahora estamos luchando contra un zombie de fuego.
+                historia+=FuncionesJLJM.nombre+": "+FuncionesJLJM.dondeLlego(FuncionesNA.desplazamiento(FuncionesJLJM.velocidad),"puerta de fuera volviendo atrás")+"\n"; //Si recorres menos de 3 metros, en secretaria. Si recorres más, en las escaleras hacia arriba.
+                historia+="Bryony y Cabezanuca se alian para atizarle al zombie: "+FuncionesJD.combate(FuncionesNS.nombre+" "+FuncionesRJ.nombre, "Fernando el Zombie", (byte)(FuncionesNS.fuerza+20 /*por el extintor*/+FuncionesRJ.fuerza) , (byte)14,(FuncionesNS.velocidad>FuncionesRJ.velocidad?FuncionesNS.velocidad:FuncionesRJ.velocidad), (byte)(85/2) /*porque tiene que estar atento a 2 personas*/)+"\n";
+                historia+="El zombie fernando, revienta esparciéndose en unos pocos pedazos que arden\n";
+                historia+=FuncionesJD.nombre+": "+FuncionesJD.dondeLlego(FuncionesNA.desplazamiento(FuncionesJD.velocidad),"salen a calle comedias")+" Le dejas la llave a CabezaNuca mientras sales\n"; //Si recorres menos de 3 metros, fuera, llegas a la puerta del Bakkano, si recorres más, llegas hasta el oNeill.
+                historia+=FuncionesPI.nombre+": "+FuncionesPI.dondeLlego(FuncionesNA.desplazamiento(FuncionesPI.velocidad),"puerta del aula")+"\n"; //Si recorres menos de 3 metros, llegas a mitad de las escaleras. Si recorres más, llegas abajo.
+                historia+=FuncionesA.nombre+": "+FuncionesA.dondeLlego(FuncionesNA.desplazamiento(FuncionesA.velocidad),"puerta del aula")+"\n"; //Si recorres menos de 3 metros, llegas a mitad de las escaleras. Si recorres más, llegas abajo.
                  
                 System.out.println(historia);
                 

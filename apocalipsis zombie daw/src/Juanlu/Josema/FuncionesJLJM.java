@@ -108,9 +108,9 @@ public class FuncionesJLJM {
  * @param punteria punteria del personaje
  * @return 
  */
-    public static boolean lanzar(byte f, float peso, byte punteria) {
+    public static boolean lanzar(byte f, byte punteria,float peso) {
 
-        float lanzarP = (f * 20) / 100;
+        float lanzarP = f * 0.2f;
 
         float d= lanzarP - peso;
 

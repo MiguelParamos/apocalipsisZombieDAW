@@ -135,7 +135,7 @@ public class FuncionesRJ {
      
      public static boolean lanzar(byte fuerza,float peso,byte punteria){
           
-        float pesoL=(fuerza*20)/100;
+        float pesoL=fuerza*0.2f;
         
         float dif=pesoL-peso;
         

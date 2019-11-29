@@ -17,7 +17,7 @@ public class FuncionesA {
     public static byte fuerza;// fuerza del personaje entre 0 y 100 (10)
     public static byte intuicion; //intuicion del personaje entre 0 y 100 (55)
     public static byte percepcion;//intuicion del personaje entre 0 y 100 (60)
-    
+    public static byte vida= 100; //Puesta a mano por miguel
     /**
      *  Comprueba que la suma de sus estadisticas sume 200
      * @param velocidad velocidad del personaje

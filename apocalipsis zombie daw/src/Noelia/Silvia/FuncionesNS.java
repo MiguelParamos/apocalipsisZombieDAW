@@ -148,6 +148,9 @@ public class FuncionesNS {
                 
             }
 }
+    return false;
+    }
+}
  
 //     Quinto turno, si se mira el móvil, se ve emergencia, ataque en málaga, por favor acuda A PIE a uno de los refugios preparados, 
 //     tiene mapa de los puntos mas cercano en: http://emergencias.gov.es. Cuando entráis, el enlace está roto.
