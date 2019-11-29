@@ -74,10 +74,10 @@ public class FuncionesPI {
      */
     public static String dondeLlego (int distancia,String mensaje){
         
-        if(distancia>=3){
-          return "Estoy en la puerta con todos";
+        if(distancia>=3&&mensaje.equals("puerta del aula")){
+          return "Estoy abajo";
         }else{
-            return "Estoy en secretaria"; 
+            return "Estoy en mitad de las escaleras"; 
             }
         
         
@@ -100,8 +100,7 @@ public class FuncionesPI {
                     return false;
                 }else{
                     return true;
-                }
-                
+                }  
             }else{
                 if(punteria<20){
                     return false;
