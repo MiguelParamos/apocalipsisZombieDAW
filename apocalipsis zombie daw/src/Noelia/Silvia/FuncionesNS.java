@@ -134,9 +134,9 @@ public class FuncionesNS {
     
     public static boolean lanzar(byte fuerza, byte punteria, float po){
 
-    float lanzarP = (fuerza * 20) / 100;
+    float lanzar = fuerza*0.20f;
 
-        float d= lanzarP - po;
+        float d= lanzar - po;
 
         if (d < 0) {
 
