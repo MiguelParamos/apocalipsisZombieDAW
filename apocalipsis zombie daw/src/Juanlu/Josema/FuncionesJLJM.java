@@ -5,8 +5,6 @@
  */
 package Juanlu.Josema;
 
-
-
 /**
  * Clase Funciones personaje
  *
@@ -24,7 +22,7 @@ public class FuncionesJLJM {
     public static byte percepción;//Percepción del personaje entre 0 y 100
     public static byte vida;//Vide del personaje con 100 de base
     public static byte punteria;//Puntería del personaje
-    
+
     public static boolean comprobacionInicial(byte v, byte f, byte i, byte p) {
 
         if (v + f + i + p == 200) {
@@ -55,12 +53,13 @@ public class FuncionesJLJM {
         }
         return "";
     }
-/**
- * 
- * @param distancia velocidad a la que se mueve el jugador
- * @param mensaje ubicación del personaje
- * @return 
- */
+
+    /**
+     *
+     * @param distancia velocidad a la que se mueve el jugador
+     * @param mensaje ubicación del personaje
+     * @return
+     */
     public static String dondeLlego(int distancia, String mensaje) {
 
         if (distancia >= 3) {
@@ -73,9 +72,9 @@ public class FuncionesJLJM {
                 case "Estás en la puerta":
                     return "Has bajado las escaleras, estás en la 1ª planta";
                 case "Estás en la primera planta":
-                    
-                    return"Estás en la puerta de la calle";
-               
+
+                    return "Estás en la puerta de la calle";
+
             }
         } else {
             switch (mensaje) {
@@ -87,22 +86,59 @@ public class FuncionesJLJM {
 
                     return "Estás en medio de las escaleras";
                 case "Estás en el tablón":
-                   
+
                     return "Estás en medio de las escaleras";
                 case "Estás en medio de las escaleras":
-                        
-                     return "Estás en la primera planta";
-                     
+
+                    return "Estás en la primera planta";
+
                 case "primera planta":
-                    
+
                     return "Estás en secretaría";
-                        
+
             }
         }
 
         return "";
     }
+/**
+ * 
+ * @param f fuerza del personaje
+ * @param peso peso del objeto a lanzar
+ * @param punteria punteria del personaje
+ * @return 
+ */
+    public static boolean lanzar(byte f, float peso, byte punteria) {
 
+        float lanzarP = (f * 20) / 100;
+
+        float d= lanzarP - peso;
+
+        if (d < 0) {
+
+            return false;
+
+        }else{
+            if (d<5) {
+                if (punteria<50) {
+                    return false;
+                }else{
+                return true;
+                }
+                
+            }else{
+                if (punteria<20) {
+                    return false;
+                }else{
+                return true;
+                }
+                
+            }
+            
+        }
+        
+
+    }
 }
 
 /**
