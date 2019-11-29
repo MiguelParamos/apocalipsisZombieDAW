@@ -102,7 +102,10 @@ public class FuncionesNA {
                 
             }else if(turno==8 && velocidad<85 && accion.equals("intento huir hacia la calle")){
                     return ("Conforme escapabas, el zombie te agarra de una pierna. Rick carga contra el, y os libera.");
-                    }
+                    
+                    }else if(turno == 10 && accion.equals("le prendo fuego al zombie con el mechero y el desodorante")){
+            return("Ahora estamos luchando contra un zombie de fuego");
+            }
         
         return ("");
         }
