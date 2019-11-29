@@ -70,7 +70,8 @@ public class ApocalipsisZombieDaw {
            FuncionesA.fuerza=10;
            FuncionesA.intuicion=55;
            FuncionesA.percepcion=60;
-           //FuncionesA.punteria=8;
+           FuncionesA.punteria=8;
+           FuncionesA.vida=100;
            
            FuncionesPI.nombre="Foyonero";
            FuncionesPI.velocidad=50;
