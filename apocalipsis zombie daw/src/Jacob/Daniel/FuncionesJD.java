@@ -72,7 +72,7 @@ public static String dondeLlego (int distancia,String mensaje){
                 
                 case "mitad de las escaleras": return "Estoy en secretaria";
                     
-                case "salen a la calle comedias": return "Estoy en el oNeill";
+                case "salen a calle comedias": return "Estoy en el oNeill";
             }
         }else{
             switch(mensaje){
@@ -90,7 +90,7 @@ public static String dondeLlego (int distancia,String mensaje){
                     
                 case "mitad de las escaleras": return "Estoy al principio de la 1ª planta";
                 
-                case "salen a la calle comedias": return "Estoy en el Bakkano";
+                case "salen a calle comedias": return "Estoy en el Bakkano";
             }
         }
         return "";
